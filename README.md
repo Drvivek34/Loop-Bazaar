@@ -1,5 +1,7 @@
 # 🌟 Loop-Bazaar: The Curated AI Agent Loops Directory
 
+![Loop-Bazaar Banner](assets/banner.jpg)
+
 Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5050** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
 *Last updated: 2026-06-20 | Version: 1.0.0 | Daily updates at 6:00 AM IST*

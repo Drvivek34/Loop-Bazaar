@@ -22,6 +22,7 @@ def compile_markdown():
     # 1. Start root README content
     readme = []
     readme.append("# 🌟 Loop-Bazaar: The Curated AI Agent Loops Directory")
+    readme.append("\n![Loop-Bazaar Banner](assets/banner.jpg)")
     readme.append(f"\nWelcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **{total_count}** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.")
     readme.append(f"\n*Last updated: {updated_date} | Version: 1.0.0 | Daily updates at 6:00 AM IST*")
     
