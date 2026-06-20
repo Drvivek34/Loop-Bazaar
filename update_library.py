@@ -304,7 +304,7 @@ def process_github_issues(db_data):
                         genai.configure(api_key=api_key)
                         
                         # Fetch project files contents
-                        files_to_read = ["index.html", "style.css", "script.js", "loops_data.json"]
+                        files_to_read = ["README.md", "compile_markdown.py", "update_library.py", "test_library.py", "loops_data.json"]
                         project_context = ""
                         for filename in files_to_read:
                             filepath = os.path.join(REPO_DIR, filename)
@@ -401,9 +401,17 @@ def main():
             json.dump(db_data, f, indent=2)
         print("Updated database saved successfully.")
 
+        # Re-compile markdown files
+        try:
+            from compile_markdown import compile_markdown
+            compile_markdown()
+            print("Markdown files re-compiled successfully.")
+        except Exception as compile_err:
+            print(f"Error compiling markdown: {compile_err}")
+
         # 6. Commit and Push back to GitHub
         try:
-            run_cmd("git add loops_data.json")
+            run_cmd("git add loops_data.json README.md categories/")
             run_cmd('git commit -m "Automated daily loop catalog & rankings update [skip ci]"')
             run_cmd("git push origin main")
             print("Successfully pushed updates to GitHub repository.")
