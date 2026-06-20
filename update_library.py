@@ -25,7 +25,8 @@ def scrape_latest_loops(db_data):
     """Scrapes the latest loops from the official catalog URL."""
     print("Scraping latest loops from Forward Future...")
     try:
-        with urllib.request.urlopen(CATALOG_URL) as response:
+        req = urllib.request.Request(CATALOG_URL, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
+        with urllib.request.urlopen(req) as response:
             external_data = json.loads(response.read().decode('utf-8'))
         
         existing_slugs = {loop["slug"] for loop in db_data.get("loops", [])}
