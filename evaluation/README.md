@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1048 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1051 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -1056,3 +1056,6 @@ Welcome to the **Evaluation** category folder! This folder contains 1048 loops.
 | #5032 | [The Ruby on Rails Error Log Anomalies Optimizes Loop](rubyonrails-error-log-anomalies-optimizes-5032.md) | @steipete | ★★★★☆ 4.8 | A repeatable agent workflow that optimizes error log anomalies in Ruby on Rails and stops when API response time is under 100ms. |
 | #5039 | [The Terraform Unit Test Coverage Debugs Loop](terraform-unit-test-coverage-debugs-5039.md) | @ken_t | ★★★★★ 5.0 | A repeatable agent workflow that debugs unit test coverage in Terraform and stops when error rate drops below 0.1%. |
 | #5043 | [The Flutter Svg Assets Standardizes Loop](flutter-svg-assets-standardizes-5043.md) | @steipete | ★★★★☆ 4.0 | A repeatable agent workflow that standardizes SVG assets in Flutter and stops when error rate drops below 0.1%. |
+| #5061 | [Generator–Critic reflection loop](reflection-generator-critic-loop.md) | Andrew Ng (DeepLearning.AI) | ★★★★☆ 4.7 | Pair a generator with a separate critic agent that reviews and sends feedback until quality is met. |
+| #5062 | [LLM-as-judge evaluation loop](llm-as-judge-eval-loop.md) | Zheng et al. (MT-Bench) | ★★★★☆ 4.6 | Use a strong model as a judge to score outputs against a rubric, iterating prompts/models until scores plateau. |
+| #5063 | [Tree-of-Thoughts deliberate search loop](tree-of-thoughts-loop.md) | Yao et al. (2023) | ★★★★☆ 4.6 | Explore multiple reasoning branches, evaluate them, and expand the most promising — a search loop over thoughts. |

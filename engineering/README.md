@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1050 loops.
+Welcome to the **Engineering** category folder! This folder contains 1060 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -1058,3 +1058,13 @@ Welcome to the **Engineering** category folder! This folder contains 1050 loops.
 | #5048 | [The GitHub Actions Seo Keywords Profiles Loop](githubactions-seo-keywords-profiles-5048.md) | @lSAAGl | ★★★★☆ 4.5 | A repeatable agent workflow that profiles SEO keywords in GitHub Actions and stops when error rate drops below 0.1%. |
 | #5049 | [The React Api Endpoints Sweeps Loop](react-api-endpoints-sweeps-5049.md) | @bjarnes | ★★★★☆ 4.7 | A repeatable agent workflow that sweeps API endpoints in React and stops when stale state is fully cleared. |
 | #5050 | [The NestJS Database Queries Profiles Loop](nestjs-database-queries-profiles-5050.md) | @inferencegod | ★★★★☆ 4.5 | A repeatable agent workflow that profiles database queries in NestJS and stops when API response time is under 100ms. |
+| #5051 | [The Ralph (Wiggum) loop](ralph-wiggum-loop.md) | Geoffrey Huntley (@geoffreyhuntley) | ★★★★☆ 4.9 | A brute-force `while true` bash loop that repeatedly feeds an agent the same prompt file with a fresh context each iteration until the task is complete. |
+| #5052 | [The ReAct (reason + act) loop](react-reason-act-loop.md) | Yao et al. (Princeton/Google) | ★★★★☆ 4.8 | Interleave reasoning traces and tool actions: think, act, observe, repeat — terminating on a final answer. |
+| #5053 | [The Reflexion loop](reflexion-loop.md) | Shinn et al. (2023) | ★★★★☆ 4.8 | Generate an attempt, verbally reflect on what went wrong, store the reflection, and retry with that memory. |
+| #5054 | [The Self-Refine loop](self-refine-loop.md) | Madaan et al. (2023) | ★★★★☆ 4.7 | One model both produces output and critiques it, iterating on its own feedback until good enough. |
+| #5055 | [The CRITIC tool-verified loop](critic-self-correction-loop.md) | Gou et al. (2024) | ★★★★☆ 4.6 | Self-correct by verifying outputs with external tools (search, code execution) and revising on the evidence. |
+| #5056 | [Explore → Plan → Code → Commit](explore-plan-code-commit-loop.md) | Anthropic | ★★★★☆ 4.8 | The recommended Claude Code working loop: read context, make a plan, implement, then commit — repeating per unit of work. |
+| #5057 | [The test-first agent loop](tdd-agent-loop.md) | Anthropic | ★★★★☆ 4.7 | Ask the agent to write tests first, commit them, then implement until the tests pass. |
+| #5058 | [PRD-completion autonomous loop](prd-completion-loop.md) | snarktank (Ralph) | ★★★★☆ 4.6 | Run an agent loop that works through a PRD checklist, repeating until every item is complete. |
+| #5059 | [Autonomous loop with intelligent exit detection](intelligent-exit-loop.md) | Frank Bria (@frankbria) | ★★★★☆ 4.5 | A Ralph-style Claude Code loop with safeguards that detect completion/stagnation to avoid infinite runs and API waste. |
+| #5060 | [The Plan-and-Execute loop](plan-and-execute-loop.md) | LangChain | ★★★★☆ 4.6 | Plan the whole strategy up front, then execute steps sequentially, re-planning only when needed. |
