@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+cron.log
+temp_crontab.txt
+.DS_Store
