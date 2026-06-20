@@ -1,0 +1,61 @@
+name: "➕ Submit a Loop"
+description: "Add a repeatable AI agent loop to the Loop Bazaar."
+title: "[Loop] <name of loop>"
+labels: ["submission", "loop"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for contributing to **Loop-Bazaar**! The daily automation parses accepted submissions into `loops_data.json` and recompiles the directory. Always credit the original author/source."
+  - type: input
+    id: title
+    attributes:
+      label: Loop title
+      placeholder: "e.g. The docs sweep"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [engineering, evaluation, operations, content, design]
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author / credit
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL (if any)
+    validations:
+      required: false
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The loop prompt / instruction
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps (one per line)
+    validations:
+      required: true
+  - type: input
+    id: verification
+    attributes:
+      label: Stopping condition (verification)
+      placeholder: "e.g. Finish with a reviewable pull request."
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I credited the author/source and included a stopping condition.
+          required: true
