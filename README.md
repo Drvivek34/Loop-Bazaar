@@ -2,6 +2,8 @@
 
 ![Loop-Bazaar Banner](assets/banner.jpg)
 
+[![Mega AI Bazaar](https://img.shields.io/badge/🌐_Mega_AI_Bazaar-browse_all-6C5CE7)](https://drvivek34.github.io/Mega-AI-Bazaar/)
+
 Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5064** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
 *Last updated: 2026-06-20 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
