@@ -6,7 +6,7 @@ set -e
 echo "=== Starting Daily Loop Library Update: $(date) ==="
 
 # Go to the repository directory
-cd /root/github-loop-library
+cd /root/Loop-Bazaar
 
 # Load environment variables to ensure SSH keys and API keys are loaded in cron
 if [ -f "$HOME/.profile" ]; then

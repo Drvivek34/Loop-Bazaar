@@ -3,7 +3,7 @@ import os
 import random
 from datetime import datetime, timedelta
 
-DB_PATH = "/root/github-loop-library/loops_data.json"
+DB_PATH = "/root/Loop-Bazaar/loops_data.json"
 ORIGINAL_PATH = "/root/.gemini/antigravity-cli/brain/63b1e010-619f-4d0c-a04b-0cc19f8234d3/.system_generated/steps/16/content.md"
 
 # Seed data pools for generating 5000+ realistic loops

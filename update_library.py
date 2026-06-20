@@ -6,8 +6,8 @@ import urllib.request
 from datetime import datetime
 
 # Configurations
-DB_PATH = "/root/github-loop-library/loops_data.json"
-REPO_DIR = "/root/github-loop-library"
+DB_PATH = "/root/Loop-Bazaar/loops_data.json"
+REPO_DIR = "/root/Loop-Bazaar"
 CATALOG_URL = "https://signals.forwardfuture.ai/loop-library/catalog.json"
 
 def run_cmd(cmd, cwd=REPO_DIR):
@@ -82,7 +82,7 @@ def process_github_pull_requests():
                 
                 # Run unit tests
                 print("Running test suite on PR branch...")
-                run_cmd("python3 -m unittest /root/github-loop-library/test_library.py")
+                run_cmd("python3 -m unittest /root/Loop-Bazaar/test_library.py")
                 
                 # If tests pass, merge the PR
                 print(f"Tests passed! Merging PR #{pr_num}...")
@@ -352,7 +352,7 @@ def process_github_issues(db_data):
                                 
                                 # Verify using tests
                                 try:
-                                    run_cmd("python3 -m unittest /root/github-loop-library/test_library.py")
+                                    run_cmd("python3 -m unittest /root/Loop-Bazaar/test_library.py")
                                     print("Autocoded fix passes unit tests! Committing changes...")
                                     run_cmd(f"git add {target_file}")
                                     run_cmd(f"git commit -m 'Auto-implemented fix for Issue #{issue_num}'")

@@ -4,7 +4,7 @@ import os
 
 class TestLoopsDatabase(unittest.TestCase):
     def setUp(self):
-        self.db_path = "/root/github-loop-library/loops_data.json"
+        self.db_path = "/root/Loop-Bazaar/loops_data.json"
         self.assertTrue(os.path.exists(self.db_path), "Database file loops_data.json does not exist")
         
         with open(self.db_path, "r", encoding="utf-8") as f:
