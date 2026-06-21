@@ -411,7 +411,7 @@ def main():
 
         # 6. Commit and Push back to GitHub
         try:
-            run_cmd("git add loops_data.json README.md categories/")
+            run_cmd("git add loops_data.json README.md engineering/ evaluation/ operations/ content/ design/")
             run_cmd('git commit -m "Automated daily loop catalog & rankings update [skip ci]"')
             run_cmd("git push origin main")
             print("Successfully pushed updates to GitHub repository.")
