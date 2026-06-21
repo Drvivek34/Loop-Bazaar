@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1060 loops.
+Welcome to the **Engineering** category folder! This folder contains 1066 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -71,8 +71,11 @@ Welcome to the **Engineering** category folder! This folder contains 1060 loops.
 | #0308 | [The GitHub Actions Bundle Sizes Debugs Loop](githubactions-bundle-sizes-debugs-0308.md) | @richard_s | ★★★★☆ 4.3 | A repeatable agent workflow that debugs bundle sizes in GitHub Actions and stops when target threshold is reached. |
 | #031 | [The recent-feedback sweep](recent-feedback-sweep.md) | Matthew Berman | ★★★★☆ 4.8 | A project audit that turns recent user-reported problems into reusable failure patterns, fixes every confirmed match, and verifies a clean final sweep. |
 | #0314 | [The Svelte Error Log Anomalies Cleans up Loop](svelte-error-log-anomalies-cleansup-0314.md) | @agent0ai | ★★★★☆ 4.1 | A repeatable agent workflow that cleans up error log anomalies in Svelte and stops when all checks pass successfully. |
+| #033 | [The propagation compliance loop](propagation-compliance-loop.md) | @iamTristan | ★★★★★ 5.0 | A consistency check for values copied across a code project: update every affected copy, find leftovers, and prove that only intentional old references remain. |
+| #035 | [The Goal Forge loop](goal-forge-loop.md) | michael Guo (@michaelzsguo) | ★★★★★ 5.0 | A planning workflow that interviews the user, writes what should be built in SPEC.md, and writes how Codex should execute and verify it in GOAL.md. |
 | #0359 | [The Django Docker Images Sweeps Loop](django-docker-images-sweeps-0359.md) | @matthewberman | ★★★★☆ 4.0 | A repeatable agent workflow that sweeps Docker images in Django and stops when API response time is under 100ms. |
 | #0366 | [The HuggingFace Database Queries Audits Loop](huggingface-database-queries-audits-0366.md) | @lucas_k | ★★★★★ 5.0 | A repeatable agent workflow that audits database queries in HuggingFace and stops when all checks pass successfully. |
+| #037 | [The cold-load trimmer loop](cold-load-trimmer-loop.md) | Christian Katzmann | ★★★★★ 5.0 | A web performance workflow that reduces the data downloaded before the first screen appears, while tests and screenshots protect behavior and appearance. |
 | #0370 | [The React Native Server Response Times Cleans up Loop](reactnative-server-response-times-cleansup-0370.md) | @vivek34 | ★★★★☆ 4.2 | A repeatable agent workflow that cleans up server response times in React Native and stops when test coverage reaches 100%. |
 | #0372 | [The Svelte Code Documentation Drift Secures Loop](svelte-code-documentation-drift-secures-0372.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that secures code documentation drift in Svelte and stops when error rate drops below 0.1%. |
 | #0378 | [The Svelte Seo Keywords Secures Loop](svelte-seo-keywords-secures-0378.md) | @inferencegod | ★★★★☆ 4.4 | A repeatable agent workflow that secures SEO keywords in Svelte and stops when all checks pass successfully. |
@@ -83,12 +86,15 @@ Welcome to the **Engineering** category folder! This folder contains 1060 loops.
 | #0391 | [The Django Docker Images Cleans up Loop](django-docker-images-cleansup-0391.md) | @0xUmbra | ★★★★☆ 4.8 | A repeatable agent workflow that cleans up Docker images in Django and stops when target threshold is reached. |
 | #0399 | [The Ruby on Rails Git Hooks Configuration Validates Loop](rubyonrails-git-hooks-configuration-validates-0399.md) | @grace_hopper | ★★★★☆ 4.3 | A repeatable agent workflow that validates Git hooks configuration in Ruby on Rails and stops when no regressions are detected. |
 | #0400 | [The React Svg Assets Optimizes Loop](react-svg-assets-optimizes-0400.md) | @lucas_k | ★★★★☆ 4.2 | A repeatable agent workflow that optimizes SVG assets in React and stops when test coverage reaches 100%. |
+| #041 | [The housekeeper loop](housekeeper-loop.md) | Eric Lott | ★★★★★ 5.0 | A conservative code-project cleanup that proves one small opportunity is safe, makes the smallest useful change, and keeps it only after existing checks pass. |
 | #0413 | [The React Data Backup Logs Sweeps Loop](react-data-backup-logs-sweeps-0413.md) | @dennis_r | ★★★★☆ 4.8 | A repeatable agent workflow that sweeps data backup logs in React and stops when no regressions are detected. |
 | #0420 | [The React Git Hooks Configuration Audits Loop](react-git-hooks-configuration-audits-0420.md) | @marcus_a | ★★★★☆ 4.1 | A repeatable agent workflow that audits Git hooks configuration in React and stops when documentation is fully aligned with implementation. |
 | #0423 | [The Kubernetes Unused Imports Verifies Loop](kubernetes-unused-imports-verifies-0423.md) | @swayam | ★★★★☆ 4.3 | A repeatable agent workflow that verifies unused imports in Kubernetes and stops when no duplicate imports remain. |
 | #0426 | [The Flask Cache Hit Ratios Optimizes Loop](flask-cache-hit-ratios-optimizes-0426.md) | @swayam | ★★★★☆ 4.8 | A repeatable agent workflow that optimizes cache hit ratios in Flask and stops when no regressions are detected. |
 | #0427 | [The PostgreSQL Memory Leaks Cleans up Loop](postgresql-memory-leaks-cleansup-0427.md) | @hiten | ★★★★☆ 4.8 | A repeatable agent workflow that cleans up memory leaks in PostgreSQL and stops when no regressions are detected. |
+| #043 | [The prepare-a-new-project loop](prepare-new-project-loop.md) | Brad Shannon (@bradshannon) | ★★★★★ 5.0 | A planning workflow that closes documentation gaps until requirements, technical design, acceptance criteria, and test strategy describe one buildable system. |
 | #0434 | [The TailwindCSS Ssl Certificates Debugs Loop](tailwindcss-ssl-certificates-debugs-0434.md) | @ranvier2d2 | ★★★★☆ 4.1 | A repeatable agent workflow that debugs SSL certificates in TailwindCSS and stops when API response time is under 100ms. |
+| #044 | [The test stabilizer loop](test-stabilizer-loop.md) | hungtv27 (@hungtv27) | ★★★★★ 5.0 | A flaky-test repair workflow that measures inconsistent results, fixes one root cause at a time, and stops after a defined streak of stable full-suite runs. |
 | #0440 | [The Elasticsearch Localized Files Refactors Loop](elasticsearch-localized-files-refactors-0440.md) | @hiten | ★★★★☆ 4.7 | A repeatable agent workflow that refactors localized files in Elasticsearch and stops when performance benchmark is met. |
 | #0442 | [The Docker Api Endpoints Triages Loop](docker-api-endpoints-triages-0442.md) | @dennis_r | ★★★★☆ 4.9 | A repeatable agent workflow that triages API endpoints in Docker and stops when all vulnerabilities are resolved. |
 | #0444 | [The GitHub Actions Memory Leaks Refactors Loop](githubactions-memory-leaks-refactors-0444.md) | @swayam | ★★★★☆ 4.7 | A repeatable agent workflow that refactors memory leaks in GitHub Actions and stops when no regressions are detected. |

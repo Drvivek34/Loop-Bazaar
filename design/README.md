@@ -1,6 +1,6 @@
 # 🛠️ Design Loops - Loop-Bazaar
 
-Welcome to the **Design** category folder! This folder contains 1046 loops.
+Welcome to the **Design** category folder! This folder contains 1049 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -81,14 +81,17 @@ Welcome to the **Design** category folder! This folder contains 1046 loops.
 | #0344 | [The Django Dependency Versions Profiles Loop](django-dependency-versions-profiles-0344.md) | @elena_r | ★★★★☆ 4.8 | A repeatable agent workflow that profiles dependency versions in Django and stops when all checks pass successfully. |
 | #0355 | [The Redis Git Hooks Configuration Standardizes Loop](redis-git-hooks-configuration-standardizes-0355.md) | @claudio_d | ★★★★☆ 4.7 | A repeatable agent workflow that standardizes Git hooks configuration in Redis and stops when all vulnerabilities are resolved. |
 | #0357 | [The Laravel Api Rate Limits Standardizes Loop](laravel-api-rate-limits-standardizes-0357.md) | @matthewberman | ★★★★☆ 4.9 | A repeatable agent workflow that standardizes API rate limits in Laravel and stops when no duplicate imports remain. |
+| #036 | [The UI/UX Score Loop](ui-ux-score-loop.md) | Hayden Cassar (@hcassar93) | ★★★★★ 5.0 | A browser-based review that completes a real user task, scores each meaningful screen with the same checklist, improves weak spots, and retests the whole task. |
 | #0362 | [The NestJS Ssl Certificates Audits Loop](nestjs-ssl-certificates-audits-0362.md) | @grace_hopper | ★★★★☆ 4.1 | A repeatable agent workflow that audits SSL certificates in NestJS and stops when API response time is under 100ms. |
 | #0374 | [The FastAPI Ssl Certificates Verifies Loop](fastapi-ssl-certificates-verifies-0374.md) | @alan_turing | ★★★★☆ 4.9 | A repeatable agent workflow that verifies SSL certificates in FastAPI and stops when all vulnerabilities are resolved. |
+| #038 | [The pixel-safe CSS trim loop](pixel-safe-css-trim-loop.md) | Christian Katzmann | ★★★★★ 5.0 | A stylesheet cleanup workflow that removes one piece of unused or redundant CSS at a time and keeps it removed only when every tested screen looks identical. |
 | #0381 | [The TailwindCSS Git Hooks Configuration Audits Loop](tailwindcss-git-hooks-configuration-audits-0381.md) | @inferencegod | ★★★★☆ 4.0 | A repeatable agent workflow that audits Git hooks configuration in TailwindCSS and stops when no regressions are detected. |
 | #0382 | [The Spring Boot Api Rate Limits Refactors Loop](springboot-api-rate-limits-refactors-0382.md) | @swayam | ★★★★☆ 4.2 | A repeatable agent workflow that refactors API rate limits in Spring Boot and stops when performance benchmark is met. |
 | #0387 | [The PostgreSQL Api Endpoints Debugs Loop](postgresql-api-endpoints-debugs-0387.md) | @inferencegod | ★★★★☆ 4.3 | A repeatable agent workflow that debugs API endpoints in PostgreSQL and stops when all checks pass successfully. |
 | #0389 | [The FastAPI Json Schema Validation Sweeps Loop](fastapi-json-schema-validation-sweeps-0389.md) | @victormustar | ★★★★☆ 4.1 | A repeatable agent workflow that sweeps JSON schema validation in FastAPI and stops when all checks pass successfully. |
 | #0396 | [The Flask Dependency Versions Cleans up Loop](flask-dependency-versions-cleansup-0396.md) | @ada_lovelace | ★★★★☆ 4.9 | A repeatable agent workflow that cleans up dependency versions in Flask and stops when all vulnerabilities are resolved. |
 | #0398 | [The HuggingFace Ssl Certificates Secures Loop](huggingface-ssl-certificates-secures-0398.md) | @bjarnes | ★★★★☆ 4.1 | A repeatable agent workflow that secures SSL certificates in HuggingFace and stops when target threshold is reached. |
+| #040 | [The accessibility repair loop](accessibility-repair-loop.md) | Eric Lott | ★★★★★ 5.0 | An accessibility review that confirms barriers against an agreed standard, fixes the issue with the greatest user impact, and repeats the same checks. |
 | #0401 | [The Vue Localized Files Verifies Loop](vue-localized-files-verifies-0401.md) | @linus_t | ★★★★☆ 4.7 | A repeatable agent workflow that verifies localized files in Vue and stops when API response time is under 100ms. |
 | #0404 | [The PostgreSQL Api Rate Limits Audits Loop](postgresql-api-rate-limits-audits-0404.md) | @donald_k | ★★★★☆ 4.5 | A repeatable agent workflow that audits API rate limits in PostgreSQL and stops when test coverage reaches 100%. |
 | #0407 | [The Kubernetes Api Endpoints Cleans up Loop](kubernetes-api-endpoints-cleansup-0407.md) | @lucas_k | ★★★★☆ 4.4 | A repeatable agent workflow that cleans up API endpoints in Kubernetes and stops when error rate drops below 0.1%. |

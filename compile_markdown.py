@@ -23,6 +23,7 @@ def compile_markdown():
     readme = []
     readme.append("# 🌟 Loop-Bazaar: The Curated AI Agent Loops Directory")
     readme.append("\n![Loop-Bazaar Banner](assets/banner.jpg)")
+    readme.append("\n[![Mega AI Bazaar](https://img.shields.io/badge/🌐_Mega_AI_Bazaar-browse_all-6C5CE7)](https://drvivek34.github.io/Mega-AI-Bazaar/)")
     readme.append(f"\nWelcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **{total_count}** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.")
     readme.append(f"\n*Last updated: {updated_date} | Version: 1.0.0 | Daily updates at 6:00 AM IST*")
     

@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1051 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1055 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -78,8 +78,10 @@ Welcome to the **Evaluation** category folder! This folder contains 1051 loops.
 | #0309 | [The TailwindCSS Json Schema Validation Debugs Loop](tailwindcss-json-schema-validation-debugs-0309.md) | @0xUmbra | ★★★★☆ 4.1 | A repeatable agent workflow that debugs JSON schema validation in TailwindCSS and stops when error rate drops below 0.1%. |
 | #0311 | [The Ruby on Rails Ssl Certificates Verifies Loop](rubyonrails-ssl-certificates-verifies-0311.md) | @bjarnes | ★★★★☆ 4.5 | A repeatable agent workflow that verifies SSL certificates in Ruby on Rails and stops when documentation is fully aligned with implementation. |
 | #0316 | [The Terraform Security Groups Profiles Loop](terraform-security-groups-profiles-0316.md) | @donald_k | ★★★★☆ 4.7 | A repeatable agent workflow that profiles security groups in Terraform and stops when performance benchmark is met. |
+| #032 | [The promise-to-proof loop](promise-to-proof-loop.md) | Felix Haeberle (@felixhaberle) | ★★★★★ 5.0 | A product review that compares claims in marketing, documentation, demos, and AI answers with current evidence, then fixes or narrows unsupported promises. |
 | #0334 | [The TailwindCSS Svg Assets Standardizes Loop](tailwindcss-svg-assets-standardizes-0334.md) | @dennis_r | ★★★★☆ 4.2 | A repeatable agent workflow that standardizes SVG assets in TailwindCSS and stops when all checks pass successfully. |
 | #0335 | [The MongoDB Json Schema Validation Optimizes Loop](mongodb-json-schema-validation-optimizes-0335.md) | @0xUmbra | ★★★★☆ 4.2 | A repeatable agent workflow that optimizes JSON schema validation in MongoDB and stops when documentation is fully aligned with implementation. |
+| #034 | [The multi-LLM convergence loop](multi-llm-convergence-loop.md) | Donn Felker (@donnfelker) | ★★★★★ 5.0 | Alternates two AI systems from different providers to review a plan, document, or code change until both approve the exact same version. |
 | #0341 | [The Svelte Error Log Anomalies Optimizes Loop](svelte-error-log-anomalies-optimizes-0341.md) | @grace_hopper | ★★★★☆ 4.1 | A repeatable agent workflow that optimizes error log anomalies in Svelte and stops when all checks pass successfully. |
 | #0343 | [The Terraform Svg Assets Validates Loop](terraform-svg-assets-validates-0343.md) | @0xUmbra | ★★★★☆ 4.7 | A repeatable agent workflow that validates SVG assets in Terraform and stops when API response time is under 100ms. |
 | #0345 | [The Svelte Database Queries Cleans up Loop](svelte-database-queries-cleansup-0345.md) | @james_g | ★★★★☆ 4.6 | A repeatable agent workflow that cleans up database queries in Svelte and stops when compliance report returns zero warnings. |
@@ -96,6 +98,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1051 loops.
 | #0377 | [The Kubernetes Localized Files Refactors Loop](kubernetes-localized-files-refactors-0377.md) | @dennis_r | ★★★★☆ 4.8 | A repeatable agent workflow that refactors localized files in Kubernetes and stops when no duplicate imports remain. |
 | #0380 | [The Svelte Json Schema Validation Sweeps Loop](svelte-json-schema-validation-sweeps-0380.md) | @alan_turing | ★★★★☆ 4.5 | A repeatable agent workflow that sweeps JSON schema validation in Svelte and stops when target threshold is reached. |
 | #0386 | [The Terraform Data Backup Logs Optimizes Loop](terraform-data-backup-logs-optimizes-0386.md) | @Dis_Trackted | ★★★★☆ 4.4 | A repeatable agent workflow that optimizes data backup logs in Terraform and stops when test coverage reaches 100%. |
+| #039 | [The easy onboarding loop](easy-onboarding-loop.md) | Eric Lott | ★★★★★ 5.0 | A first-time-user test that starts with no saved account or browser state, fixes one confirmed onboarding obstacle, and retries the entire experience. |
 | #0390 | [The Svelte Database Queries Standardizes Loop](svelte-database-queries-standardizes-0390.md) | @donald_k | ★★★★☆ 4.9 | A repeatable agent workflow that standardizes database queries in Svelte and stops when all vulnerabilities are resolved. |
 | #0392 | [The FastAPI Database Queries Refactors Loop](fastapi-database-queries-refactors-0392.md) | @tim_berners | ★★★★☆ 4.2 | A repeatable agent workflow that refactors database queries in FastAPI and stops when all checks pass successfully. |
 | #0402 | [The Django Unused Imports Sweeps Loop](django-unused-imports-sweeps-0402.md) | @matthewberman | ★★★★★ 5.0 | A repeatable agent workflow that sweeps unused imports in Django and stops when all checks pass successfully. |
@@ -103,6 +106,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1051 loops.
 | #0405 | [The Svelte Docker Images Cleans up Loop](svelte-docker-images-cleansup-0405.md) | @alan_turing | ★★★★☆ 4.3 | A repeatable agent workflow that cleans up Docker images in Svelte and stops when error rate drops below 0.1%. |
 | #0411 | [The NestJS Localized Files Cleans up Loop](nestjs-localized-files-cleansup-0411.md) | @ken_t | ★★★★☆ 4.5 | A repeatable agent workflow that cleans up localized files in NestJS and stops when no duplicate imports remain. |
 | #0419 | [The Terraform Bundle Sizes Optimizes Loop](terraform-bundle-sizes-optimizes-0419.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that optimizes bundle sizes in Terraform and stops when documentation is fully aligned with implementation. |
+| #042 | [The Axelrod subagent arena loop](axelrod-subagent-arena-loop.md) | Kan Yuenyong (@sikkha) | ★★★★★ 5.0 | A controlled tournament where two reasoning AI agents repeatedly choose to cooperate or defect, then are compared with players that always make one choice. |
 | #0421 | [The PostgreSQL Ssl Certificates Refactors Loop](postgresql-ssl-certificates-refactors-0421.md) | @linus_t | ★★★★☆ 4.8 | A repeatable agent workflow that refactors SSL certificates in PostgreSQL and stops when target threshold is reached. |
 | #0422 | [The Flask Code Documentation Drift Audits Loop](flask-code-documentation-drift-audits-0422.md) | @james_g | ★★★★☆ 4.5 | A repeatable agent workflow that audits code documentation drift in Flask and stops when all checks pass successfully. |
 | #0436 | [The TailwindCSS Git Hooks Configuration Refactors Loop](tailwindcss-git-hooks-configuration-refactors-0436.md) | @vivek34 | ★★★★☆ 4.2 | A repeatable agent workflow that refactors Git hooks configuration in TailwindCSS and stops when target threshold is reached. |
