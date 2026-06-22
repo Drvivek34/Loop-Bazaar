@@ -6,7 +6,7 @@
 
 Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5064** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
-*Last updated: 2026-06-21 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
+*Last updated: 2026-06-22 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
 
 ## 🔌 Supported Platforms & Agentic Rigs
 The workflows and prompts in Loop-Bazaar are designed to be environment-agnostic and can be implemented in a wide range of platforms:
@@ -308,6 +308,12 @@ Click on the titles to view complete details (Prompts, Steps, and Why it works) 
 | #042 | Evaluation | [The Axelrod subagent arena loop](evaluation/axelrod-subagent-arena-loop.md) | Kan Yuenyong (@sikkha) | ★★★★★ 5.0 | A controlled tournament where two reasoning AI agents repeatedly choose to cooperate or defect, then are compared with players that always make one choice. |
 | #043 | Engineering | [The prepare-a-new-project loop](engineering/prepare-new-project-loop.md) | Brad Shannon (@bradshannon) | ★★★★★ 5.0 | A planning workflow that closes documentation gaps until requirements, technical design, acceptance criteria, and test strategy describe one buildable system. |
 | #044 | Engineering | [The test stabilizer loop](engineering/test-stabilizer-loop.md) | hungtv27 (@hungtv27) | ★★★★★ 5.0 | A flaky-test repair workflow that measures inconsistent results, fixes one root cause at a time, and stops after a defined streak of stable full-suite runs. |
+| #045 | Evaluation | [The artifact-to-skill loop](evaluation/artifact-to-skill-loop.md) | Hiten Shah (@hnshah) | ★★★★★ 5.0 | A reusable workflow for turning one proven artifact into a transferable skill, playbook, or procedure and validating it on a second case. |
+| #046 | Evaluation | [The Strip Miner loop](evaluation/strip-miner-loop.md) | Alex Burkhart (@neuralwhisperer) | ★★★★★ 5.0 | An evidence-driven workflow-mining loop that finds repeated successes in authorized coding-agent history, rejects contradicted candidates, and validates extracted loops with fresh replay. |
+| #047 | Operations | [The Living Story loop](operations/living-story-loop.md) | Buddy Hadry (@buddyhadry) | ★★★★★ 5.0 | A recurring context-maintenance workflow that turns repository activity, goals, and prior open threads into a verified daily story for future agents. |
+| #048 | Engineering | [The Groundtruth loop](engineering/groundtruth-audit-loop.md) | Mohamed (@aivibecode) | ★★★★★ 5.0 | A read-only project-audit workflow that verifies architecture, security, platform behavior, operations, and business logic from current evidence rather than assumptions. |
+| #049 | Operations | [The Recovery Proof loop](operations/recovery-proof-loop.md) | Eric Lott | ★★★★★ 5.0 | A disaster-recovery validation workflow that restores randomly selected real recovery points, verifies integrity and RPO/RTO, and preserves failures as regression drills. |
+| #050 | Operations | [The refund follow-up loop](operations/refund-follow-up-loop.md) | Jason (@jxnlco) | ★★★★★ 5.0 | A persistent follow-up workflow that starts a refund claim, watches replies and deadlines, and keeps the case moving until the money arrives. |
 | #0035 | Content | [The Kubernetes Svg Assets Optimizes Loop](content/kubernetes-svg-assets-optimizes-0035.md) | @guido_vr | ★★★★☆ 4.9 | A repeatable agent workflow that optimizes SVG assets in Kubernetes and stops when performance benchmark is met. |
 | #0038 | Engineering | [The NestJS Data Backup Logs Refactors Loop](engineering/nestjs-data-backup-logs-refactors-0038.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that refactors data backup logs in NestJS and stops when error rate drops below 0.1%. |
 | #0055 | Evaluation | [The TailwindCSS Unused Imports Validates Loop](evaluation/tailwindcss-unused-imports-validates-0055.md) | @inferencegod | ★★★★☆ 4.9 | A repeatable agent workflow that validates unused imports in TailwindCSS and stops when compliance report returns zero warnings. |

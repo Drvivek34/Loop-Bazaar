@@ -1,6 +1,6 @@
 # 🛠️ Operations Loops - Loop-Bazaar
 
-Welcome to the **Operations** category folder! This folder contains 950 loops.
+Welcome to the **Operations** category folder! This folder contains 953 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -97,10 +97,13 @@ Welcome to the **Operations** category folder! This folder contains 950 loops.
 | #0443 | [The Express.js Dependency Versions Validates Loop](expressjs-dependency-versions-validates-0443.md) | @swayam | ★★★★☆ 4.6 | A repeatable agent workflow that validates dependency versions in Express.js and stops when error rate drops below 0.1%. |
 | #0461 | [The Ruby on Rails Json Schema Validation Secures Loop](rubyonrails-json-schema-validation-secures-0461.md) | @matthewberman | ★★★★☆ 4.1 | A repeatable agent workflow that secures JSON schema validation in Ruby on Rails and stops when performance benchmark is met. |
 | #0464 | [The Terraform Api Rate Limits Validates Loop](terraform-api-rate-limits-validates-0464.md) | @marcus_a | ★★★★★ 5.0 | A repeatable agent workflow that validates API rate limits in Terraform and stops when documentation is fully aligned with implementation. |
+| #047 | [The Living Story loop](living-story-loop.md) | Buddy Hadry (@buddyhadry) | ★★★★★ 5.0 | A recurring context-maintenance workflow that turns repository activity, goals, and prior open threads into a verified daily story for future agents. |
 | #0475 | [The Vue Database Queries Secures Loop](vue-database-queries-secures-0475.md) | @lucas_k | ★★★★☆ 4.7 | A repeatable agent workflow that secures database queries in Vue and stops when all checks pass successfully. |
 | #0484 | [The GitHub Actions Unit Test Coverage Standardizes Loop](githubactions-unit-test-coverage-standardizes-0484.md) | @Dis_Trackted | ★★★★☆ 4.3 | A repeatable agent workflow that standardizes unit test coverage in GitHub Actions and stops when compliance report returns zero warnings. |
 | #0488 | [The MongoDB Api Rate Limits Cleans up Loop](mongodb-api-rate-limits-cleansup-0488.md) | @victormustar | ★★★★☆ 4.9 | A repeatable agent workflow that cleans up API rate limits in MongoDB and stops when API response time is under 100ms. |
+| #049 | [The Recovery Proof loop](recovery-proof-loop.md) | Eric Lott | ★★★★★ 5.0 | A disaster-recovery validation workflow that restores randomly selected real recovery points, verifies integrity and RPO/RTO, and preserves failures as regression drills. |
 | #0495 | [The AWS Lambda Seo Keywords Triages Loop](awslambda-seo-keywords-triages-0495.md) | @marcus_a | ★★★★★ 5.0 | A repeatable agent workflow that triages SEO keywords in AWS Lambda and stops when target threshold is reached. |
+| #050 | [The refund follow-up loop](refund-follow-up-loop.md) | Jason (@jxnlco) | ★★★★★ 5.0 | A persistent follow-up workflow that starts a refund claim, watches replies and deadlines, and keeps the case moving until the money arrives. |
 | #0503 | [The Django Svg Assets Validates Loop](django-svg-assets-validates-0503.md) | @james_g | ★★★★☆ 4.1 | A repeatable agent workflow that validates SVG assets in Django and stops when performance benchmark is met. |
 | #0505 | [The Flask Css Layouts Validates Loop](flask-css-layouts-validates-0505.md) | @sophia_w | ★★★★☆ 4.2 | A repeatable agent workflow that validates CSS layouts in Flask and stops when no duplicate imports remain. |
 | #0507 | [The Spring Boot Dependency Versions Validates Loop](springboot-dependency-versions-validates-0507.md) | @vivek34 | ★★★★☆ 4.1 | A repeatable agent workflow that validates dependency versions in Spring Boot and stops when all vulnerabilities are resolved. |

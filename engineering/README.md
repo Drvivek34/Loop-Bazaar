@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1066 loops.
+Welcome to the **Engineering** category folder! This folder contains 1067 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -107,6 +107,7 @@ Welcome to the **Engineering** category folder! This folder contains 1066 loops.
 | #0469 | [The Vue Accessibility Tags Audits Loop](vue-accessibility-tags-audits-0469.md) | @ranvier2d2 | ★★★★☆ 4.1 | A repeatable agent workflow that audits accessibility tags in Vue and stops when no duplicate imports remain. |
 | #0470 | [The Next.js Svg Assets Validates Loop](nextjs-svg-assets-validates-0470.md) | @lSAAGl | ★★★★☆ 4.3 | A repeatable agent workflow that validates SVG assets in Next.js and stops when target threshold is reached. |
 | #0473 | [The AWS Lambda Server Response Times Sweeps Loop](awslambda-server-response-times-sweeps-0473.md) | @ranvier2d2 | ★★★★☆ 4.1 | A repeatable agent workflow that sweeps server response times in AWS Lambda and stops when target threshold is reached. |
+| #048 | [The Groundtruth loop](groundtruth-audit-loop.md) | Mohamed (@aivibecode) | ★★★★★ 5.0 | A read-only project-audit workflow that verifies architecture, security, platform behavior, operations, and business logic from current evidence rather than assumptions. |
 | #0491 | [The GitHub Actions Json Schema Validation Sweeps Loop](githubactions-json-schema-validation-sweeps-0491.md) | @elena_r | ★★★★★ 5.0 | A repeatable agent workflow that sweeps JSON schema validation in GitHub Actions and stops when compliance report returns zero warnings. |
 | #0494 | [The Laravel Code Documentation Drift Optimizes Loop](laravel-code-documentation-drift-optimizes-0494.md) | @hiten | ★★★★☆ 4.1 | A repeatable agent workflow that optimizes code documentation drift in Laravel and stops when all vulnerabilities are resolved. |
 | #0501 | [The Svelte Server Response Times Validates Loop](svelte-server-response-times-validates-0501.md) | @agent0ai | ★★★★☆ 4.5 | A repeatable agent workflow that validates server response times in Svelte and stops when target threshold is reached. |

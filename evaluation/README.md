@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1055 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1057 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -112,8 +112,10 @@ Welcome to the **Evaluation** category folder! This folder contains 1055 loops.
 | #0436 | [The TailwindCSS Git Hooks Configuration Refactors Loop](tailwindcss-git-hooks-configuration-refactors-0436.md) | @vivek34 | ★★★★☆ 4.2 | A repeatable agent workflow that refactors Git hooks configuration in TailwindCSS and stops when target threshold is reached. |
 | #0437 | [The Express.js Unit Test Coverage Verifies Loop](expressjs-unit-test-coverage-verifies-0437.md) | @sophia_w | ★★★★☆ 4.6 | A repeatable agent workflow that verifies unit test coverage in Express.js and stops when no duplicate imports remain. |
 | #0447 | [The Laravel Accessibility Tags Triages Loop](laravel-accessibility-tags-triages-0447.md) | @hiten | ★★★★☆ 4.9 | A repeatable agent workflow that triages accessibility tags in Laravel and stops when documentation is fully aligned with implementation. |
+| #045 | [The artifact-to-skill loop](artifact-to-skill-loop.md) | Hiten Shah (@hnshah) | ★★★★★ 5.0 | A reusable workflow for turning one proven artifact into a transferable skill, playbook, or procedure and validating it on a second case. |
 | #0456 | [The MongoDB Memory Leaks Triages Loop](mongodb-memory-leaks-triages-0456.md) | @marcus_a | ★★★★☆ 4.6 | A repeatable agent workflow that triages memory leaks in MongoDB and stops when API response time is under 100ms. |
 | #0459 | [The Django Access Control Lists Profiles Loop](django-access-control-lists-profiles-0459.md) | @agent0ai | ★★★★☆ 4.7 | A repeatable agent workflow that profiles access control lists in Django and stops when error rate drops below 0.1%. |
+| #046 | [The Strip Miner loop](strip-miner-loop.md) | Alex Burkhart (@neuralwhisperer) | ★★★★★ 5.0 | An evidence-driven workflow-mining loop that finds repeated successes in authorized coding-agent history, rejects contradicted candidates, and validates extracted loops with fresh replay. |
 | #0463 | [The Spring Boot Accessibility Tags Standardizes Loop](springboot-accessibility-tags-standardizes-0463.md) | @bjarnes | ★★★★☆ 4.7 | A repeatable agent workflow that standardizes accessibility tags in Spring Boot and stops when documentation is fully aligned with implementation. |
 | #0465 | [The FastAPI Git Hooks Configuration Triages Loop](fastapi-git-hooks-configuration-triages-0465.md) | @victormustar | ★★★★☆ 4.5 | A repeatable agent workflow that triages Git hooks configuration in FastAPI and stops when no regressions are detected. |
 | #0466 | [The HuggingFace Security Groups Standardizes Loop](huggingface-security-groups-standardizes-0466.md) | @lucas_k | ★★★★☆ 4.7 | A repeatable agent workflow that standardizes security groups in HuggingFace and stops when no duplicate imports remain. |
