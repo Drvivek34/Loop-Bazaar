@@ -1,6 +1,6 @@
 # 🛠️ Operations Loops - Loop-Bazaar
 
-Welcome to the **Operations** category folder! This folder contains 953 loops.
+Welcome to the **Operations** category folder! This folder contains 954 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -117,6 +117,7 @@ Welcome to the **Operations** category folder! This folder contains 953 loops.
 | #0563 | [The Redis Bundle Sizes Standardizes Loop](redis-bundle-sizes-standardizes-0563.md) | @swayam | ★★★★☆ 4.2 | A repeatable agent workflow that standardizes bundle sizes in Redis and stops when no regressions are detected. |
 | #0564 | [The PostgreSQL Unit Test Coverage Secures Loop](postgresql-unit-test-coverage-secures-0564.md) | @grace_hopper | ★★★★☆ 4.5 | A repeatable agent workflow that secures unit test coverage in PostgreSQL and stops when target threshold is reached. |
 | #0568 | [The Vue Code Documentation Drift Audits Loop](vue-code-documentation-drift-audits-0568.md) | @james_g | ★★★★☆ 4.7 | A repeatable agent workflow that audits code documentation drift in Vue and stops when no duplicate imports remain. |
+| #057 | [The Loop Hiring Manager](loop-hiring-manager.md) | Eric Lott | ★★★★★ 5.0 | A portfolio review that finds unowned recurring outcomes, reuses published loops when possible, and recommends one bounded manual trial before adoption. |
 | #0576 | [The Next.js Unused Imports Optimizes Loop](nextjs-unused-imports-optimizes-0576.md) | @dennis_r | ★★★★☆ 4.0 | A repeatable agent workflow that optimizes unused imports in Next.js and stops when API response time is under 100ms. |
 | #0578 | [The HuggingFace Cache Hit Ratios Profiles Loop](huggingface-cache-hit-ratios-profiles-0578.md) | @alan_turing | ★★★★☆ 4.8 | A repeatable agent workflow that profiles cache hit ratios in HuggingFace and stops when target threshold is reached. |
 | #0589 | [The Laravel Unused Imports Cleans up Loop](laravel-unused-imports-cleansup-0589.md) | @brendan_e | ★★★★☆ 4.3 | A repeatable agent workflow that cleans up unused imports in Laravel and stops when all checks pass successfully. |

@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1067 loops.
+Welcome to the **Engineering** category folder! This folder contains 1071 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -115,12 +115,15 @@ Welcome to the **Engineering** category folder! This folder contains 1067 loops.
 | #0523 | [The PyTorch Security Groups Debugs Loop](pytorch-security-groups-debugs-0523.md) | @brendan_e | ★★★★☆ 4.8 | A repeatable agent workflow that debugs security groups in PyTorch and stops when no regressions are detected. |
 | #0526 | [The Laravel Security Groups Secures Loop](laravel-security-groups-secures-0526.md) | @hiten | ★★★★☆ 4.6 | A repeatable agent workflow that secures security groups in Laravel and stops when documentation is fully aligned with implementation. |
 | #0528 | [The Vue Cache Hit Ratios Refactors Loop](vue-cache-hit-ratios-refactors-0528.md) | @sophia_w | ★★★★☆ 4.6 | A repeatable agent workflow that refactors cache hit ratios in Vue and stops when target threshold is reached. |
+| #053 | [The error-message rewrite loop](error-message-rewrite-loop.md) | Will Undrell (@WillUndrll) | ★★★★★ 5.0 | An AI coding-agent workflow for inventorying user-visible errors, replacing internal or confusing text, and proving each reachable error state communicates clearly. |
 | #0536 | [The Kubernetes Accessibility Tags Refactors Loop](kubernetes-accessibility-tags-refactors-0536.md) | @claudio_d | ★★★★☆ 4.2 | A repeatable agent workflow that refactors accessibility tags in Kubernetes and stops when no duplicate imports remain. |
+| #054 | [The stable-frame-rate loop](stable-frame-rate-loop.md) | Aviv Sheriff (@Avivsh) | ★★★★★ 5.0 | A repeatable game-performance workflow that measures frame time, CPU, GPU, and memory under fixed conditions and keeps only regression-free optimizations. |
 | #0545 | [The FastAPI Unit Test Coverage Audits Loop](fastapi-unit-test-coverage-audits-0545.md) | @tim_berners | ★★★★☆ 4.1 | A repeatable agent workflow that audits unit test coverage in FastAPI and stops when API response time is under 100ms. |
 | #0550 | [The AWS Lambda Svg Assets Refactors Loop](awslambda-svg-assets-refactors-0550.md) | @claudio_d | ★★★★☆ 4.6 | A repeatable agent workflow that refactors SVG assets in AWS Lambda and stops when API response time is under 100ms. |
 | #0556 | [The Kubernetes Docker Images Secures Loop](kubernetes-docker-images-secures-0556.md) | @inferencegod | ★★★★☆ 4.3 | A repeatable agent workflow that secures Docker images in Kubernetes and stops when stale state is fully cleared. |
 | #0558 | [The GitHub Actions Svg Assets Standardizes Loop](githubactions-svg-assets-standardizes-0558.md) | @brendan_e | ★★★★☆ 4.1 | A repeatable agent workflow that standardizes SVG assets in GitHub Actions and stops when compliance report returns zero warnings. |
 | #0559 | [The Flutter Seo Keywords Sweeps Loop](flutter-seo-keywords-sweeps-0559.md) | @0xUmbra | ★★★★☆ 4.2 | A repeatable agent workflow that sweeps SEO keywords in Flutter and stops when no duplicate imports remain. |
+| #056 | [The dependency-CVE burndown loop](dependency-cve-burndown-loop.md) | hungtv27 (@hungtv27) | ★★★★★ 5.0 | A software-security workflow that ranks dependency CVEs by reachability and exposure, applies one bounded fix, and verifies the complete project before continuing. |
 | #0560 | [The Vercel Dependency Versions Cleans up Loop](vercel-dependency-versions-cleansup-0560.md) | @richard_s | ★★★★☆ 4.4 | A repeatable agent workflow that cleans up dependency versions in Vercel and stops when performance benchmark is met. |
 | #0569 | [The Ruby on Rails Cache Hit Ratios Sweeps Loop](rubyonrails-cache-hit-ratios-sweeps-0569.md) | @inferencegod | ★★★★☆ 4.7 | A repeatable agent workflow that sweeps cache hit ratios in Ruby on Rails and stops when compliance report returns zero warnings. |
 | #0574 | [The Redis Api Rate Limits Optimizes Loop](redis-api-rate-limits-optimizes-0574.md) | @ada_lovelace | ★★★★☆ 4.3 | A repeatable agent workflow that optimizes API rate limits in Redis and stops when stale state is fully cleared. |
@@ -140,6 +143,7 @@ Welcome to the **Engineering** category folder! This folder contains 1067 loops.
 | #0627 | [The Flask Memory Leaks Debugs Loop](flask-memory-leaks-debugs-0627.md) | @grace_hopper | ★★★★☆ 4.8 | A repeatable agent workflow that debugs memory leaks in Flask and stops when no duplicate imports remain. |
 | #0628 | [The Flask Data Backup Logs Profiles Loop](flask-data-backup-logs-profiles-0628.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that profiles data backup logs in Flask and stops when documentation is fully aligned with implementation. |
 | #0632 | [The Vue Git Hooks Configuration Debugs Loop](vue-git-hooks-configuration-debugs-0632.md) | @matthewberman | ★★★★☆ 4.8 | A repeatable agent workflow that debugs Git hooks configuration in Vue and stops when performance benchmark is met. |
+| #064 | [The dependency triage loop](dependency-triage-loop.md) | Damian Galarza (@dgalarza) | ★★★★★ 5.0 | A safe Dependabot review loop that checks current diffs, release information, exact-head CI, and repository tests before repairing, merging, or escalating updates. |
 | #0644 | [The NestJS Git Hooks Configuration Sweeps Loop](nestjs-git-hooks-configuration-sweeps-0644.md) | @donald_k | ★★★★☆ 4.8 | A repeatable agent workflow that sweeps Git hooks configuration in NestJS and stops when all vulnerabilities are resolved. |
 | #0646 | [The Ruby on Rails Svg Assets Verifies Loop](rubyonrails-svg-assets-verifies-0646.md) | @lucas_k | ★★★★☆ 4.6 | A repeatable agent workflow that verifies SVG assets in Ruby on Rails and stops when documentation is fully aligned with implementation. |
 | #0649 | [The Docker Css Layouts Refactors Loop](docker-css-layouts-refactors-0649.md) | @ken_t | ★★★★☆ 4.1 | A repeatable agent workflow that refactors CSS layouts in Docker and stops when API response time is under 100ms. |

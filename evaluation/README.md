@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1057 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1061 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -128,6 +128,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1057 loops.
 | #0489 | [The Next.js Cache Hit Ratios Cleans up Loop](nextjs-cache-hit-ratios-cleansup-0489.md) | @brendan_e | ★★★★☆ 4.5 | A repeatable agent workflow that cleans up cache hit ratios in Next.js and stops when compliance report returns zero warnings. |
 | #0493 | [The Laravel Bundle Sizes Standardizes Loop](laravel-bundle-sizes-standardizes-0493.md) | @ken_t | ★★★★☆ 4.0 | A repeatable agent workflow that standardizes bundle sizes in Laravel and stops when all vulnerabilities are resolved. |
 | #0496 | [The React Security Groups Audits Loop](react-security-groups-audits-0496.md) | @victormustar | ★★★★★ 5.0 | A repeatable agent workflow that audits security groups in React and stops when error rate drops below 0.1%. |
+| #051 | [The next-action confidence check](next-action-confidence-check.md) | Shinichi Nagata (@DecisionOS) | ★★★★★ 5.0 | A bounded AI-agent exit gate that verifies the current task, evaluates the next action, and returns control to the user before more work begins. |
 | #0520 | [The FastAPI Memory Leaks Standardizes Loop](fastapi-memory-leaks-standardizes-0520.md) | @marcus_a | ★★★★☆ 4.1 | A repeatable agent workflow that standardizes memory leaks in FastAPI and stops when no duplicate imports remain. |
 | #0521 | [The Vue Code Documentation Drift Sweeps Loop](vue-code-documentation-drift-sweeps-0521.md) | @james_g | ★★★★☆ 4.4 | A repeatable agent workflow that sweeps code documentation drift in Vue and stops when compliance report returns zero warnings. |
 | #0524 | [The Ruby on Rails Localized Files Debugs Loop](rubyonrails-localized-files-debugs-0524.md) | @inferencegod | ★★★★☆ 4.5 | A repeatable agent workflow that debugs localized files in Ruby on Rails and stops when all vulnerabilities are resolved. |
@@ -136,11 +137,13 @@ Welcome to the **Evaluation** category folder! This folder contains 1057 loops.
 | #0535 | [The Next.js Ssl Certificates Triages Loop](nextjs-ssl-certificates-triages-0535.md) | @claudio_d | ★★★★☆ 4.3 | A repeatable agent workflow that triages SSL certificates in Next.js and stops when stale state is fully cleared. |
 | #0539 | [The TailwindCSS Security Groups Validates Loop](tailwindcss-security-groups-validates-0539.md) | @matthewberman | ★★★★☆ 4.3 | A repeatable agent workflow that validates security groups in TailwindCSS and stops when stale state is fully cleared. |
 | #0547 | [The PyTorch Api Endpoints Optimizes Loop](pytorch-api-endpoints-optimizes-0547.md) | @agent0ai | ★★★★☆ 4.0 | A repeatable agent workflow that optimizes API endpoints in PyTorch and stops when documentation is fully aligned with implementation. |
+| #055 | [The cross-run playbook loop](cross-run-playbook-loop.md) | AKT (@akt199009) | ★★★★★ 5.0 | A versioned AI-agent learning workflow that tests one recorded lesson at a time, keeps evidence across runs, and removes guidance that stops helping. |
 | #0553 | [The Next.js Unused Imports Cleans up Loop](nextjs-unused-imports-cleansup-0553.md) | @grace_hopper | ★★★★☆ 4.8 | A repeatable agent workflow that cleans up unused imports in Next.js and stops when test coverage reaches 100%. |
 | #0561 | [The Redis Json Schema Validation Validates Loop](redis-json-schema-validation-validates-0561.md) | @ada_lovelace | ★★★★☆ 4.2 | A repeatable agent workflow that validates JSON schema validation in Redis and stops when performance benchmark is met. |
 | #0565 | [The Next.js Css Layouts Debugs Loop](nextjs-css-layouts-debugs-0565.md) | @vivek34 | ★★★★☆ 4.7 | A repeatable agent workflow that debugs CSS layouts in Next.js and stops when compliance report returns zero warnings. |
 | #0567 | [The AWS Lambda Security Groups Refactors Loop](awslambda-security-groups-refactors-0567.md) | @Dis_Trackted | ★★★★☆ 4.6 | A repeatable agent workflow that refactors security groups in AWS Lambda and stops when error rate drops below 0.1%. |
 | #0573 | [The HuggingFace Unit Test Coverage Sweeps Loop](huggingface-unit-test-coverage-sweeps-0573.md) | @ranvier2d2 | ★★★★☆ 4.8 | A repeatable agent workflow that sweeps unit test coverage in HuggingFace and stops when performance benchmark is met. |
+| #058 | [The loop-auditor loop](loop-auditor-loop.md) | quigleyBits (@quigleyBits) | ★★★★★ 5.0 | A read-only portfolio audit that recomputes measured-loop performance, evaluates operational loops on their own terms, and recommends what should continue. |
 | #0581 | [The MongoDB Code Documentation Drift Standardizes Loop](mongodb-code-documentation-drift-standardizes-0581.md) | @hiten | ★★★★☆ 4.1 | A repeatable agent workflow that standardizes code documentation drift in MongoDB and stops when error rate drops below 0.1%. |
 | #0583 | [The Spring Boot Api Endpoints Debugs Loop](springboot-api-endpoints-debugs-0583.md) | @alan_turing | ★★★★☆ 4.9 | A repeatable agent workflow that debugs API endpoints in Spring Boot and stops when performance benchmark is met. |
 | #0592 | [The Terraform Server Response Times Debugs Loop](terraform-server-response-times-debugs-0592.md) | @richard_s | ★★★★☆ 4.2 | A repeatable agent workflow that debugs server response times in Terraform and stops when all vulnerabilities are resolved. |
@@ -150,6 +153,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1057 loops.
 | #0605 | [The Django Json Schema Validation Refactors Loop](django-json-schema-validation-refactors-0605.md) | @bjarnes | ★★★★☆ 4.1 | A repeatable agent workflow that refactors JSON schema validation in Django and stops when all checks pass successfully. |
 | #0612 | [The Vue Dependency Versions Optimizes Loop](vue-dependency-versions-optimizes-0612.md) | @brendan_e | ★★★★☆ 4.7 | A repeatable agent workflow that optimizes dependency versions in Vue and stops when performance benchmark is met. |
 | #0629 | [The Ruby on Rails Api Endpoints Sweeps Loop](rubyonrails-api-endpoints-sweeps-0629.md) | @guido_vr | ★★★★☆ 4.9 | A repeatable agent workflow that sweeps API endpoints in Ruby on Rails and stops when API response time is under 100ms. |
+| #063 | [The epistemic frontier loop](epistemic-frontier-loop.md) | Indrajeet Yadav (@indrajeet877) | ★★★★★ 5.0 | A bounded reasoning loop that separates facts from assumptions, tests falsifiable hypotheses, updates confidence, and selects the next highest-information experiment. |
 | #0633 | [The Docker Code Documentation Drift Sweeps Loop](docker-code-documentation-drift-sweeps-0633.md) | @james_g | ★★★★☆ 4.6 | A repeatable agent workflow that sweeps code documentation drift in Docker and stops when test coverage reaches 100%. |
 | #0638 | [The Redis Memory Leaks Triages Loop](redis-memory-leaks-triages-0638.md) | @claudio_d | ★★★★☆ 4.8 | A repeatable agent workflow that triages memory leaks in Redis and stops when compliance report returns zero warnings. |
 | #0652 | [The Docker Accessibility Tags Debugs Loop](docker-accessibility-tags-debugs-0652.md) | @Dis_Trackted | ★★★★☆ 4.1 | A repeatable agent workflow that debugs accessibility tags in Docker and stops when all vulnerabilities are resolved. |

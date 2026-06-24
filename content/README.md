@@ -1,6 +1,6 @@
 # 🛠️ Content Loops - Loop-Bazaar
 
-Welcome to the **Content** category folder! This folder contains 957 loops.
+Welcome to the **Content** category folder! This folder contains 962 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -111,6 +111,7 @@ Welcome to the **Content** category folder! This folder contains 957 loops.
 | #0510 | [The Terraform Dependency Versions Refactors Loop](terraform-dependency-versions-refactors-0510.md) | @ranvier2d2 | ★★★★☆ 4.3 | A repeatable agent workflow that refactors dependency versions in Terraform and stops when documentation is fully aligned with implementation. |
 | #0516 | [The Next.js Database Queries Verifies Loop](nextjs-database-queries-verifies-0516.md) | @lSAAGl | ★★★★☆ 4.2 | A repeatable agent workflow that verifies database queries in Next.js and stops when API response time is under 100ms. |
 | #0517 | [The FastAPI Svg Assets Refactors Loop](fastapi-svg-assets-refactors-0517.md) | @claudio_d | ★★★★☆ 4.6 | A repeatable agent workflow that refactors SVG assets in FastAPI and stops when documentation is fully aligned with implementation. |
+| #052 | [The research-to-artifact loop](research-to-artifact-loop.md) | Hiten Shah (@hnshah) | ★★★★★ 5.0 | A bounded research workflow that follows the most important evidence gaps until a memo, brief, specification, recommendation, or page is ready to use. |
 | #0522 | [The Docker Memory Leaks Debugs Loop](docker-memory-leaks-debugs-0522.md) | @hiten | ★★★★☆ 4.4 | A repeatable agent workflow that debugs memory leaks in Docker and stops when performance benchmark is met. |
 | #0531 | [The GitHub Actions Security Groups Profiles Loop](githubactions-security-groups-profiles-0531.md) | @victormustar | ★★★★☆ 4.4 | A repeatable agent workflow that profiles security groups in GitHub Actions and stops when no regressions are detected. |
 | #0532 | [The Spring Boot Access Control Lists Standardizes Loop](springboot-access-control-lists-standardizes-0532.md) | @claudio_d | ★★★★☆ 4.7 | A repeatable agent workflow that standardizes access control lists in Spring Boot and stops when performance benchmark is met. |
@@ -122,11 +123,15 @@ Welcome to the **Content** category folder! This folder contains 957 loops.
 | #0572 | [The GitHub Actions Accessibility Tags Refactors Loop](githubactions-accessibility-tags-refactors-0572.md) | @matthewberman | ★★★★☆ 4.5 | A repeatable agent workflow that refactors accessibility tags in GitHub Actions and stops when compliance report returns zero warnings. |
 | #0575 | [The Next.js Data Backup Logs Debugs Loop](nextjs-data-backup-logs-debugs-0575.md) | @ada_lovelace | ★★★★☆ 4.6 | A repeatable agent workflow that debugs data backup logs in Next.js and stops when all vulnerabilities are resolved. |
 | #0588 | [The Ruby on Rails Data Backup Logs Verifies Loop](rubyonrails-data-backup-logs-verifies-0588.md) | @swayam | ★★★★☆ 4.9 | A repeatable agent workflow that verifies data backup logs in Ruby on Rails and stops when API response time is under 100ms. |
+| #059 | [The talk-to-five-buyers loop](talk-to-five-buyers-loop.md) | Vincent Quero (@growithvince) | ★★★★★ 5.0 | A bounded customer-research workflow that interviews recent buyers in batches, tracks recurring objections, and proposes evidence-backed landing-page copy. |
 | #0597 | [The Spring Boot Docker Images Triages Loop](springboot-docker-images-triages-0597.md) | @brendan_e | ★★★★☆ 4.5 | A repeatable agent workflow that triages Docker images in Spring Boot and stops when test coverage reaches 100%. |
 | #0598 | [The Elasticsearch Ssl Certificates Triages Loop](elasticsearch-ssl-certificates-triages-0598.md) | @claudio_d | ★★★★☆ 4.1 | A repeatable agent workflow that triages SSL certificates in Elasticsearch and stops when all vulnerabilities are resolved. |
+| #060 | [The one-post-a-week loop](one-post-a-week-loop.md) | Vincent Quero (@growithvince) | ★★★★★ 5.0 | A six-week content experiment that changes one element per post, measures replies, saves, and questions, and stops with a winner or an honest no-winner result. |
 | #0602 | [The Django Ssl Certificates Validates Loop](django-ssl-certificates-validates-0602.md) | @vivek34 | ★★★★☆ 4.3 | A repeatable agent workflow that validates SSL certificates in Django and stops when performance benchmark is met. |
 | #0606 | [The MongoDB Seo Keywords Refactors Loop](mongodb-seo-keywords-refactors-0606.md) | @ranvier2d2 | ★★★★☆ 4.8 | A repeatable agent workflow that refactors SEO keywords in MongoDB and stops when compliance report returns zero warnings. |
+| #061 | [The LaTeX document creation loop](latex-document-creation-loop.md) | Alex Vogiatzis | ★★★★★ 5.0 | A strict AI document workflow for creating a seven-section LaTeX preprint with native figures, traceable claims, repeated compilation, and explicit weaknesses. |
 | #0618 | [The Ruby on Rails Server Response Times Standardizes Loop](rubyonrails-server-response-times-standardizes-0618.md) | @inferencegod | ★★★★☆ 4.2 | A repeatable agent workflow that standardizes server response times in Ruby on Rails and stops when test coverage reaches 100%. |
+| #062 | [The pre-publish source-check loop](pre-publish-source-check-loop.md) | Ryan Banze (@RyanBanze) | ★★★★★ 5.0 | A bounded editorial verification loop that inventories checkable claims, checks primary sources, repairs high-risk mismatches, and records unresolved decisions. |
 | #0621 | [The AWS Lambda Error Log Anomalies Standardizes Loop](awslambda-error-log-anomalies-standardizes-0621.md) | @matthewberman | ★★★★☆ 4.7 | A repeatable agent workflow that standardizes error log anomalies in AWS Lambda and stops when no duplicate imports remain. |
 | #0630 | [The Kubernetes Bundle Sizes Profiles Loop](kubernetes-bundle-sizes-profiles-0630.md) | @Dis_Trackted | ★★★★☆ 4.4 | A repeatable agent workflow that profiles bundle sizes in Kubernetes and stops when all checks pass successfully. |
 | #0635 | [The Docker Cache Hit Ratios Audits Loop](docker-cache-hit-ratios-audits-0635.md) | @brendan_e | ★★★★☆ 4.3 | A repeatable agent workflow that audits cache hit ratios in Docker and stops when error rate drops below 0.1%. |
