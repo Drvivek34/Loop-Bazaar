@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1071 loops.
+Welcome to the **Engineering** category folder! This folder contains 1075 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -147,12 +147,16 @@ Welcome to the **Engineering** category folder! This folder contains 1071 loops.
 | #0644 | [The NestJS Git Hooks Configuration Sweeps Loop](nestjs-git-hooks-configuration-sweeps-0644.md) | @donald_k | ★★★★☆ 4.8 | A repeatable agent workflow that sweeps Git hooks configuration in NestJS and stops when all vulnerabilities are resolved. |
 | #0646 | [The Ruby on Rails Svg Assets Verifies Loop](rubyonrails-svg-assets-verifies-0646.md) | @lucas_k | ★★★★☆ 4.6 | A repeatable agent workflow that verifies SVG assets in Ruby on Rails and stops when documentation is fully aligned with implementation. |
 | #0649 | [The Docker Css Layouts Refactors Loop](docker-css-layouts-refactors-0649.md) | @ken_t | ★★★★☆ 4.1 | A repeatable agent workflow that refactors CSS layouts in Docker and stops when API response time is under 100ms. |
+| #065 | [The React Doctor repair loop](react-doctor-repair-loop.md) | Will Undrell (@WillUndrll) | ★★★★★ 5.0 | An AI coding-agent workflow for baselining React Doctor, repairing a small batch of real errors or warnings, and verifying that each retained change improves the scan without regressions. |
 | #0656 | [The NestJS Api Rate Limits Standardizes Loop](nestjs-api-rate-limits-standardizes-0656.md) | @grace_hopper | ★★★★☆ 4.5 | A repeatable agent workflow that standardizes API rate limits in NestJS and stops when documentation is fully aligned with implementation. |
 | #0666 | [The AWS Lambda Css Layouts Triages Loop](awslambda-css-layouts-triages-0666.md) | @hiten | ★★★★☆ 4.2 | A repeatable agent workflow that triages CSS layouts in AWS Lambda and stops when API response time is under 100ms. |
+| #067 | [The React Doctor 100/100 loop](react-doctor-100-loop.md) | leviathofnoesia (@leviath666) | ★★★★★ 5.0 | An AI coding-agent workflow for inventorying every production React app, fixing React Doctor findings without suppression, and proving a genuine 100/100 result with full project checks. |
 | #0678 | [The Vue Dependency Versions Sweeps Loop](vue-dependency-versions-sweeps-0678.md) | @ada_lovelace | ★★★★★ 5.0 | A repeatable agent workflow that sweeps dependency versions in Vue and stops when API response time is under 100ms. |
+| #068 | [The evidence-first feature loop](evidence-first-feature-loop.md) | Rashid Ali, AI Engineering - DexaMinds | ★★★★★ 5.0 | An AI coding-agent workflow for grounding one small feature change in current code, APIs, data contracts, and tests before implementation and user-path verification. |
 | #0680 | [The NestJS Docker Images Validates Loop](nestjs-docker-images-validates-0680.md) | @ada_lovelace | ★★★★☆ 4.5 | A repeatable agent workflow that validates Docker images in NestJS and stops when test coverage reaches 100%. |
 | #0686 | [The HuggingFace Seo Keywords Standardizes Loop](huggingface-seo-keywords-standardizes-0686.md) | @donald_k | ★★★★☆ 4.8 | A repeatable agent workflow that standardizes SEO keywords in HuggingFace and stops when no regressions are detected. |
 | #0687 | [The Next.js Memory Leaks Refactors Loop](nextjs-memory-leaks-refactors-0687.md) | @ken_t | ★★★★☆ 4.9 | A repeatable agent workflow that refactors memory leaks in Next.js and stops when performance benchmark is met. |
+| #069 | [The architecture-preserving code refactor loop](architecture-preserving-code-refactor-loop.md) | Subramanyam Badhika (@subbu6699) | ★★★★★ 5.0 | An AI coding-agent workflow for improving a targeted code area through dependency mapping, atomic refactors, baseline tests, and downstream regression checks without changing architecture or public contracts. |
 | #0692 | [The Django Security Groups Optimizes Loop](django-security-groups-optimizes-0692.md) | @dennis_r | ★★★★☆ 4.4 | A repeatable agent workflow that optimizes security groups in Django and stops when all vulnerabilities are resolved. |
 | #0694 | [The React Native Server Response Times Audits Loop](reactnative-server-response-times-audits-0694.md) | @donald_k | ★★★★☆ 4.6 | A repeatable agent workflow that audits server response times in React Native and stops when API response time is under 100ms. |
 | #0697 | [The Redis Unit Test Coverage Debugs Loop](redis-unit-test-coverage-debugs-0697.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that debugs unit test coverage in Redis and stops when stale state is fully cleared. |

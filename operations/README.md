@@ -1,6 +1,6 @@
 # 🛠️ Operations Loops - Loop-Bazaar
 
-Welcome to the **Operations** category folder! This folder contains 954 loops.
+Welcome to the **Operations** category folder! This folder contains 955 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -136,6 +136,7 @@ Welcome to the **Operations** category folder! This folder contains 954 loops.
 | #0643 | [The NestJS Json Schema Validation Profiles Loop](nestjs-json-schema-validation-profiles-0643.md) | @tim_berners | ★★★★☆ 4.4 | A repeatable agent workflow that profiles JSON schema validation in NestJS and stops when all vulnerabilities are resolved. |
 | #0658 | [The Terraform Server Response Times Secures Loop](terraform-server-response-times-secures-0658.md) | @steipete | ★★★★☆ 4.4 | A repeatable agent workflow that secures server response times in Terraform and stops when target threshold is reached. |
 | #0659 | [The PostgreSQL Bundle Sizes Profiles Loop](postgresql-bundle-sizes-profiles-0659.md) | @bjarnes | ★★★★☆ 4.3 | A repeatable agent workflow that profiles bundle sizes in PostgreSQL and stops when documentation is fully aligned with implementation. |
+| #066 | [The restartable handoff loop](restartable-handoff-loop.md) | Shinichi Nagata (@DecisionOS) | ★★★★★ 5.0 | A bounded AI-agent handoff workflow that records current state, evidence, risks, untouched scope, and exactly one safe next action before the session ends. |
 | #0661 | [The Flask Dependency Versions Secures Loop](flask-dependency-versions-secures-0661.md) | @swayam | ★★★★☆ 4.3 | A repeatable agent workflow that secures dependency versions in Flask and stops when all checks pass successfully. |
 | #0669 | [The GitHub Actions Code Documentation Drift Secures Loop](githubactions-code-documentation-drift-secures-0669.md) | @Dis_Trackted | ★★★★☆ 4.5 | A repeatable agent workflow that secures code documentation drift in GitHub Actions and stops when error rate drops below 0.1%. |
 | #0671 | [The PostgreSQL Code Documentation Drift Refactors Loop](postgresql-code-documentation-drift-refactors-0671.md) | @steipete | ★★★★☆ 4.3 | A repeatable agent workflow that refactors code documentation drift in PostgreSQL and stops when stale state is fully cleared. |
