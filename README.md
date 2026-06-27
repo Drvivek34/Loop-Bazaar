@@ -6,7 +6,7 @@
 
 Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5064** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
-*Last updated: 2026-06-25 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
+*Last updated: 2026-06-27 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
 
 ## 🔌 Supported Platforms & Agentic Rigs
 The workflows and prompts in Loop-Bazaar are designed to be environment-agnostic and can be implemented in a wide range of platforms:
@@ -333,6 +333,7 @@ Click on the titles to view complete details (Prompts, Steps, and Why it works) 
 | #067 | Engineering | [The React Doctor 100/100 loop](engineering/react-doctor-100-loop.md) | leviathofnoesia (@leviath666) | ★★★★★ 5.0 | An AI coding-agent workflow for inventorying every production React app, fixing React Doctor findings without suppression, and proving a genuine 100/100 result with full project checks. |
 | #068 | Engineering | [The evidence-first feature loop](engineering/evidence-first-feature-loop.md) | Rashid Ali, AI Engineering - DexaMinds | ★★★★★ 5.0 | An AI coding-agent workflow for grounding one small feature change in current code, APIs, data contracts, and tests before implementation and user-path verification. |
 | #069 | Engineering | [The architecture-preserving code refactor loop](engineering/architecture-preserving-code-refactor-loop.md) | Subramanyam Badhika (@subbu6699) | ★★★★★ 5.0 | An AI coding-agent workflow for improving a targeted code area through dependency mapping, atomic refactors, baseline tests, and downstream regression checks without changing architecture or public contracts. |
+| #070 | Evaluation | [The literature-search verification loop](evaluation/literature-search-verification-loop.md) | Nathan Nguyen | ★★★★★ 5.0 | A bounded literature-search workflow that deduplicates papers across live sources, verifies DOI metadata, measures topical relevance, and stops honestly when evidence is insufficient. |
 | #0035 | Content | [The Kubernetes Svg Assets Optimizes Loop](content/kubernetes-svg-assets-optimizes-0035.md) | @guido_vr | ★★★★☆ 4.9 | A repeatable agent workflow that optimizes SVG assets in Kubernetes and stops when performance benchmark is met. |
 | #0038 | Engineering | [The NestJS Data Backup Logs Refactors Loop](engineering/nestjs-data-backup-logs-refactors-0038.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that refactors data backup logs in NestJS and stops when error rate drops below 0.1%. |
 | #0055 | Evaluation | [The TailwindCSS Unused Imports Validates Loop](evaluation/tailwindcss-unused-imports-validates-0055.md) | @inferencegod | ★★★★☆ 4.9 | A repeatable agent workflow that validates unused imports in TailwindCSS and stops when compliance report returns zero warnings. |

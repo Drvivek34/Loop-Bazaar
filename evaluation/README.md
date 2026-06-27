@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1061 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1062 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -168,6 +168,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1061 loops.
 | #0677 | [The Flask Ssl Certificates Standardizes Loop](flask-ssl-certificates-standardizes-0677.md) | @dennis_r | ★★★★☆ 4.4 | A repeatable agent workflow that standardizes SSL certificates in Flask and stops when all vulnerabilities are resolved. |
 | #0681 | [The Next.js Unused Imports Triages Loop](nextjs-unused-imports-triages-0681.md) | @richard_s | ★★★★☆ 4.2 | A repeatable agent workflow that triages unused imports in Next.js and stops when test coverage reaches 100%. |
 | #0685 | [The FastAPI Docker Images Triages Loop](fastapi-docker-images-triages-0685.md) | @hiten | ★★★★★ 5.0 | A repeatable agent workflow that triages Docker images in FastAPI and stops when error rate drops below 0.1%. |
+| #070 | [The literature-search verification loop](literature-search-verification-loop.md) | Nathan Nguyen | ★★★★★ 5.0 | A bounded literature-search workflow that deduplicates papers across live sources, verifies DOI metadata, measures topical relevance, and stops honestly when evidence is insufficient. |
 | #0700 | [The Express.js Accessibility Tags Validates Loop](expressjs-accessibility-tags-validates-0700.md) | @steipete | ★★★★☆ 4.9 | A repeatable agent workflow that validates accessibility tags in Express.js and stops when performance benchmark is met. |
 | #0703 | [The Vercel Access Control Lists Validates Loop](vercel-access-control-lists-validates-0703.md) | @donald_k | ★★★★☆ 4.2 | A repeatable agent workflow that validates access control lists in Vercel and stops when no regressions are detected. |
 | #0706 | [The React Native Accessibility Tags Validates Loop](reactnative-accessibility-tags-validates-0706.md) | @donald_k | ★★★★☆ 4.3 | A repeatable agent workflow that validates accessibility tags in React Native and stops when target threshold is reached. |
