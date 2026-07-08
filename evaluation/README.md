@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1062 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1065 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -172,12 +172,14 @@ Welcome to the **Evaluation** category folder! This folder contains 1062 loops.
 | #0700 | [The Express.js Accessibility Tags Validates Loop](expressjs-accessibility-tags-validates-0700.md) | @steipete | ★★★★☆ 4.9 | A repeatable agent workflow that validates accessibility tags in Express.js and stops when performance benchmark is met. |
 | #0703 | [The Vercel Access Control Lists Validates Loop](vercel-access-control-lists-validates-0703.md) | @donald_k | ★★★★☆ 4.2 | A repeatable agent workflow that validates access control lists in Vercel and stops when no regressions are detected. |
 | #0706 | [The React Native Accessibility Tags Validates Loop](reactnative-accessibility-tags-validates-0706.md) | @donald_k | ★★★★☆ 4.3 | A repeatable agent workflow that validates accessibility tags in React Native and stops when target threshold is reached. |
+| #071 | [The product journey feedback loop](product-journey-feedback-loop.md) | Shubham Gupta | ★★★★★ 5.0 | A product research workflow that observes target personas across the complete user journey, separates usability friction from unmet needs, and ranks evidence-backed feature suggestions. |
 | #0711 | [The Redis Docker Images Standardizes Loop](redis-docker-images-standardizes-0711.md) | @vivek34 | ★★★★☆ 4.3 | A repeatable agent workflow that standardizes Docker images in Redis and stops when all checks pass successfully. |
 | #0722 | [The Terraform Error Log Anomalies Secures Loop](terraform-error-log-anomalies-secures-0722.md) | @marcus_a | ★★★★☆ 4.4 | A repeatable agent workflow that secures error log anomalies in Terraform and stops when no regressions are detected. |
 | #0726 | [The Spring Boot Memory Leaks Triages Loop](springboot-memory-leaks-triages-0726.md) | @linus_t | ★★★★☆ 4.1 | A repeatable agent workflow that triages memory leaks in Spring Boot and stops when performance benchmark is met. |
 | #0727 | [The Redis Data Backup Logs Profiles Loop](redis-data-backup-logs-profiles-0727.md) | @lucas_k | ★★★★☆ 4.6 | A repeatable agent workflow that profiles data backup logs in Redis and stops when all checks pass successfully. |
 | #0742 | [The PostgreSQL Ssl Certificates Cleans up Loop](postgresql-ssl-certificates-cleansup-0742.md) | @guido_vr | ★★★★☆ 4.6 | A repeatable agent workflow that cleans up SSL certificates in PostgreSQL and stops when no duplicate imports remain. |
 | #0749 | [The AWS Lambda Unit Test Coverage Refactors Loop](awslambda-unit-test-coverage-refactors-0749.md) | @ada_lovelace | ★★★★☆ 4.5 | A repeatable agent workflow that refactors unit test coverage in AWS Lambda and stops when target threshold is reached. |
+| #075 | [The expert scorecard loop](expert-scorecard-loop.md) | herath | ★★★★★ 5.0 | A quality-improvement workflow that defines expert scoring dimensions, fixes the lowest score, and requires fresh independent rescoring after every pass. |
 | #0752 | [The Flutter Server Response Times Standardizes Loop](flutter-server-response-times-standardizes-0752.md) | @Dis_Trackted | ★★★★☆ 4.6 | A repeatable agent workflow that standardizes server response times in Flutter and stops when documentation is fully aligned with implementation. |
 | #0754 | [The React Native Server Response Times Validates Loop](reactnative-server-response-times-validates-0754.md) | @brendan_e | ★★★★☆ 4.2 | A repeatable agent workflow that validates server response times in React Native and stops when no regressions are detected. |
 | #0761 | [The FastAPI Git Hooks Configuration Optimizes Loop](fastapi-git-hooks-configuration-optimizes-0761.md) | @agent0ai | ★★★★☆ 4.6 | A repeatable agent workflow that optimizes Git hooks configuration in FastAPI and stops when target threshold is reached. |
@@ -199,6 +201,7 @@ Welcome to the **Evaluation** category folder! This folder contains 1062 loops.
 | #0831 | [The FastAPI Docker Images Verifies Loop](fastapi-docker-images-verifies-0831.md) | @ken_t | ★★★★☆ 4.0 | A repeatable agent workflow that verifies Docker images in FastAPI and stops when error rate drops below 0.1%. |
 | #0832 | [The Terraform Code Documentation Drift Standardizes Loop](terraform-code-documentation-drift-standardizes-0832.md) | @claudio_d | ★★★★☆ 4.2 | A repeatable agent workflow that standardizes code documentation drift in Terraform and stops when target threshold is reached. |
 | #0838 | [The Flutter Docker Images Refactors Loop](flutter-docker-images-refactors-0838.md) | @bjarnes | ★★★★☆ 4.4 | A repeatable agent workflow that refactors Docker images in Flutter and stops when no duplicate imports remain. |
+| #084 | [The world-state accountability loop](world-state-accountability-loop.md) | Nishant Dodiya (@NishantDodiya4) | ★★★★★ 5.0 | A general agent-control workflow that turns each meaningful action into a bounded prediction, verification, and continue-or-stop decision. |
 | #0841 | [The PostgreSQL Code Documentation Drift Triages Loop](postgresql-code-documentation-drift-triages-0841.md) | @james_g | ★★★★☆ 4.7 | A repeatable agent workflow that triages code documentation drift in PostgreSQL and stops when API response time is under 100ms. |
 | #0846 | [The Vercel Api Rate Limits Verifies Loop](vercel-api-rate-limits-verifies-0846.md) | @steipete | ★★★★☆ 4.9 | A repeatable agent workflow that verifies API rate limits in Vercel and stops when compliance report returns zero warnings. |
 | #0847 | [The HuggingFace Accessibility Tags Profiles Loop](huggingface-accessibility-tags-profiles-0847.md) | @matthewberman | ★★★★☆ 4.0 | A repeatable agent workflow that profiles accessibility tags in HuggingFace and stops when error rate drops below 0.1%. |

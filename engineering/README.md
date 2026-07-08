@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1075 loops.
+Welcome to the **Engineering** category folder! This folder contains 1077 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -174,6 +174,7 @@ Welcome to the **Engineering** category folder! This folder contains 1075 loops.
 | #0756 | [The React Native Security Groups Optimizes Loop](reactnative-security-groups-optimizes-0756.md) | @marcus_a | ★★★★☆ 4.6 | A repeatable agent workflow that optimizes security groups in React Native and stops when test coverage reaches 100%. |
 | #0757 | [The TailwindCSS Seo Keywords Secures Loop](tailwindcss-seo-keywords-secures-0757.md) | @brendan_e | ★★★★☆ 4.3 | A repeatable agent workflow that secures SEO keywords in TailwindCSS and stops when error rate drops below 0.1%. |
 | #0759 | [The Next.js Server Response Times Standardizes Loop](nextjs-server-response-times-standardizes-0759.md) | @elena_r | ★★★★☆ 4.6 | A repeatable agent workflow that standardizes server response times in Next.js and stops when API response time is under 100ms. |
+| #076 | [The product contract conformance loop](product-contract-conformance-loop.md) | Charlie Greenman (@chargrnmn) | ★★★★★ 5.0 | A requirements-conformance workflow that turns a product contract into a ledger, checks current evidence, and repairs only confirmed mismatches with regression coverage. |
 | #0760 | [The PostgreSQL Docker Images Profiles Loop](postgresql-docker-images-profiles-0760.md) | @ranvier2d2 | ★★★★☆ 4.8 | A repeatable agent workflow that profiles Docker images in PostgreSQL and stops when no regressions are detected. |
 | #0768 | [The Kubernetes Database Queries Verifies Loop](kubernetes-database-queries-verifies-0768.md) | @victormustar | ★★★★☆ 4.5 | A repeatable agent workflow that verifies database queries in Kubernetes and stops when all checks pass successfully. |
 | #0769 | [The Flutter Dependency Versions Cleans up Loop](flutter-dependency-versions-cleansup-0769.md) | @donald_k | ★★★★☆ 4.3 | A repeatable agent workflow that cleans up dependency versions in Flutter and stops when stale state is fully cleared. |
@@ -189,6 +190,7 @@ Welcome to the **Engineering** category folder! This folder contains 1075 loops.
 | #0802 | [The React Native Security Groups Verifies Loop](reactnative-security-groups-verifies-0802.md) | @brendan_e | ★★★★☆ 4.3 | A repeatable agent workflow that verifies security groups in React Native and stops when API response time is under 100ms. |
 | #0812 | [The Laravel Seo Keywords Triages Loop](laravel-seo-keywords-triages-0812.md) | @linus_t | ★★★★☆ 4.4 | A repeatable agent workflow that triages SEO keywords in Laravel and stops when API response time is under 100ms. |
 | #0815 | [The AWS Lambda Memory Leaks Validates Loop](awslambda-memory-leaks-validates-0815.md) | @swayam | ★★★★☆ 4.2 | A repeatable agent workflow that validates memory leaks in AWS Lambda and stops when test coverage reaches 100%. |
+| #082 | [The spec dev-review loop](spec-dev-review-loop.md) | Ximanta (@kharamdau) | ★★★★★ 5.0 | A specification-quality workflow that writes ticket-scoped planning artifacts, applies critical gates, logs review rounds, and stops only at approval or a clear blocker. |
 | #0821 | [The Docker Api Endpoints Verifies Loop](docker-api-endpoints-verifies-0821.md) | @Dis_Trackted | ★★★★☆ 4.6 | A repeatable agent workflow that verifies API endpoints in Docker and stops when all checks pass successfully. |
 | #0829 | [The React Native Access Control Lists Verifies Loop](reactnative-access-control-lists-verifies-0829.md) | @ken_t | ★★★★☆ 4.3 | A repeatable agent workflow that verifies access control lists in React Native and stops when performance benchmark is met. |
 | #0835 | [The Flask Memory Leaks Verifies Loop](flask-memory-leaks-verifies-0835.md) | @ranvier2d2 | ★★★★☆ 4.7 | A repeatable agent workflow that verifies memory leaks in Flask and stops when test coverage reaches 100%. |

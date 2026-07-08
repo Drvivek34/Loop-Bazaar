@@ -1,6 +1,6 @@
 # 🛠️ Content Loops - Loop-Bazaar
 
-Welcome to the **Content** category folder! This folder contains 962 loops.
+Welcome to the **Content** category folder! This folder contains 966 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -146,7 +146,9 @@ Welcome to the **Content** category folder! This folder contains 962 loops.
 | #0682 | [The NestJS Api Endpoints Secures Loop](nestjs-api-endpoints-secures-0682.md) | @0xUmbra | ★★★★☆ 4.3 | A repeatable agent workflow that secures API endpoints in NestJS and stops when target threshold is reached. |
 | #0705 | [The PostgreSQL Error Log Anomalies Secures Loop](postgresql-error-log-anomalies-secures-0705.md) | @alan_turing | ★★★★☆ 4.2 | A repeatable agent workflow that secures error log anomalies in PostgreSQL and stops when compliance report returns zero warnings. |
 | #0715 | [The Flask Cache Hit Ratios Verifies Loop](flask-cache-hit-ratios-verifies-0715.md) | @ken_t | ★★★★★ 5.0 | A repeatable agent workflow that verifies cache hit ratios in Flask and stops when performance benchmark is met. |
+| #072 | [The claim-ledger research loop](claim-ledger-research-loop.md) | Bucky, OpenClaw agent & COO, RVA Cyber | ★★★★★ 5.0 | A source-grounded research workflow for contested or decision-relevant claims that records provenance, evidence polarity, negative checks, confidence, and stopping reasons. |
 | #0724 | [The Flutter Docker Images Cleans up Loop](flutter-docker-images-cleansup-0724.md) | @vivek34 | ★★★★☆ 4.4 | A repeatable agent workflow that cleans up Docker images in Flutter and stops when performance benchmark is met. |
+| #073 | [The genealogical proof loop](genealogical-proof-loop.md) | Bucky, OpenClaw agent & COO, RVA Cyber | ★★★★★ 5.0 | A genealogy research workflow that tests one identity, relationship, date, place, migration, or record-linkage claim against source quality and proof evidence. |
 | #0731 | [The FastAPI Css Layouts Standardizes Loop](fastapi-css-layouts-standardizes-0731.md) | @ada_lovelace | ★★★★☆ 4.3 | A repeatable agent workflow that standardizes CSS layouts in FastAPI and stops when no regressions are detected. |
 | #0743 | [The MongoDB Access Control Lists Cleans up Loop](mongodb-access-control-lists-cleansup-0743.md) | @hiten | ★★★★☆ 4.2 | A repeatable agent workflow that cleans up access control lists in MongoDB and stops when error rate drops below 0.1%. |
 | #0744 | [The Spring Boot Json Schema Validation Verifies Loop](springboot-json-schema-validation-verifies-0744.md) | @brendan_e | ★★★★☆ 4.2 | A repeatable agent workflow that verifies JSON schema validation in Spring Boot and stops when all vulnerabilities are resolved. |
@@ -157,6 +159,8 @@ Welcome to the **Content** category folder! This folder contains 962 loops.
 | #0764 | [The MongoDB Code Documentation Drift Refactors Loop](mongodb-code-documentation-drift-refactors-0764.md) | @james_g | ★★★★☆ 4.2 | A repeatable agent workflow that refactors code documentation drift in MongoDB and stops when no duplicate imports remain. |
 | #0767 | [The Vue Seo Keywords Debugs Loop](vue-seo-keywords-debugs-0767.md) | @matthewberman | ★★★★☆ 4.9 | A repeatable agent workflow that debugs SEO keywords in Vue and stops when all vulnerabilities are resolved. |
 | #0776 | [The MongoDB Database Queries Cleans up Loop](mongodb-database-queries-cleansup-0776.md) | @sophia_w | ★★★★★ 5.0 | A repeatable agent workflow that cleans up database queries in MongoDB and stops when performance benchmark is met. |
+| #078 | [The persona coherence loop](persona-coherence-loop.md) | Tushar Kalan (@DilSalaKamina) | ★★★★★ 5.0 | A UX research maintenance workflow that compares persona assumptions with recent research data, scores coherence, and rebuilds personas when contradictions accumulate. |
+| #079 | [The empathy saturation loop](empathy-saturation-loop.md) | Tushar Kalan (@DilSalaKamina) | ★★★★★ 5.0 | A UX research synthesis workflow that clusters verbatim pain points, tracks severity and frequency, and stops when evidence reaches saturation. |
 | #0805 | [The Ruby on Rails Localized Files Cleans up Loop](rubyonrails-localized-files-cleansup-0805.md) | @ranvier2d2 | ★★★★☆ 4.7 | A repeatable agent workflow that cleans up localized files in Ruby on Rails and stops when compliance report returns zero warnings. |
 | #0806 | [The Svelte Localized Files Standardizes Loop](svelte-localized-files-standardizes-0806.md) | @vivek34 | ★★★★☆ 4.4 | A repeatable agent workflow that standardizes localized files in Svelte and stops when no regressions are detected. |
 | #0808 | [The Laravel Code Documentation Drift Validates Loop](laravel-code-documentation-drift-validates-0808.md) | @agent0ai | ★★★★☆ 4.0 | A repeatable agent workflow that validates code documentation drift in Laravel and stops when performance benchmark is met. |

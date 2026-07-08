@@ -1,6 +1,6 @@
 # 🛠️ Design Loops - Loop-Bazaar
 
-Welcome to the **Design** category folder! This folder contains 1049 loops.
+Welcome to the **Design** category folder! This folder contains 1050 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -176,6 +176,7 @@ Welcome to the **Design** category folder! This folder contains 1049 loops.
 | #0755 | [The GitHub Actions Bundle Sizes Optimizes Loop](githubactions-bundle-sizes-optimizes-0755.md) | @vivek34 | ★★★★☆ 4.2 | A repeatable agent workflow that optimizes bundle sizes in GitHub Actions and stops when documentation is fully aligned with implementation. |
 | #0763 | [The React Unused Imports Cleans up Loop](react-unused-imports-cleansup-0763.md) | @alan_turing | ★★★★☆ 4.5 | A repeatable agent workflow that cleans up unused imports in React and stops when target threshold is reached. |
 | #0766 | [The Kubernetes Cache Hit Ratios Optimizes Loop](kubernetes-cache-hit-ratios-optimizes-0766.md) | @vivek34 | ★★★★☆ 4.8 | A repeatable agent workflow that optimizes cache hit ratios in Kubernetes and stops when all vulnerabilities are resolved. |
+| #077 | [The micro-interaction latency loop](micro-interaction-latency-loop.md) | Tushar Kalan (@DilSalaKamina) | ★★★★★ 5.0 | A design-system workflow that checks interaction timing tokens and component specs against latency thresholds, fixes the highest-severity violation, and records compliance evidence. |
 | #0771 | [The NestJS Css Layouts Sweeps Loop](nestjs-css-layouts-sweeps-0771.md) | @dennis_r | ★★★★☆ 4.7 | A repeatable agent workflow that sweeps CSS layouts in NestJS and stops when documentation is fully aligned with implementation. |
 | #0777 | [The Next.js Seo Keywords Sweeps Loop](nextjs-seo-keywords-sweeps-0777.md) | @guido_vr | ★★★★☆ 4.2 | A repeatable agent workflow that sweeps SEO keywords in Next.js and stops when no regressions are detected. |
 | #0779 | [The Docker Api Endpoints Cleans up Loop](docker-api-endpoints-cleansup-0779.md) | @Dis_Trackted | ★★★★☆ 4.6 | A repeatable agent workflow that cleans up API endpoints in Docker and stops when target threshold is reached. |

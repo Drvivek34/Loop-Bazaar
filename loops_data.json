@@ -3,7 +3,7 @@
   "name": "Loop-Bazaar",
   "publisher": "Loop Community",
   "description": "Premium markdown directory of AI agent workflows with stop conditions and ratings.",
-  "updated": "2026-06-27",
+  "updated": "2026-07-08",
   "loopCount": 5064,
   "categories": [
     {
@@ -220266,6 +220266,831 @@
           "slug": "pre-publish-source-check-loop",
           "title": "The pre-publish source-check loop",
           "url": "https://signals.forwardfuture.com/loop-library/loops/pre-publish-source-check-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "071",
+      "slug": "product-journey-feedback-loop",
+      "title": "The product journey feedback loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/product-journey-feedback-loop/",
+      "category": {
+        "slug": "evaluation",
+        "label": "Evaluation"
+      },
+      "author": "Shubham Gupta",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A product research workflow that observes target personas across the complete user journey, separates usability friction from unmet needs, and ranks evidence-backed feature suggestions.",
+      "useWhen": "Use this when a product needs grounded feature and UX feedback from realistic user journeys before deciding what to build or improve.",
+      "prompt": "Define two or three target-audience personas from the product positioning, asking if the positioning is unavailable. For one persona at a time, walk the full journey from landing and signup through core workflow, secondary features, limits, return visit, and offboarding using only what that persona could realistically see. Observe only. Record expected versus actual behavior, friction, confusion, delight, and comparable-product mental models. Split findings into usability friction, unmet needs, and feature suggestions tied to a specific journey moment. Stop after one pass per persona and return the personas, journey map, evidence log, ranked suggestions, and any approval boundaries before roadmap or production changes.",
+      "verification": {
+        "title": "Every suggestion traces to an observed persona journey moment.",
+        "detail": "The final report includes persona definitions, journey-step evidence, expected-versus-actual notes, and a ranked list where every suggestion names the persona, goal, journey moment, expected impact, effort, and existing feature it could extend."
+      },
+      "steps": [
+        "Define realistic target personas from current positioning or ask for positioning before starting.",
+        "Walk one persona at a time through the full visible journey without changing the product.",
+        "Record expected versus actual behavior, friction, confusion, delight, and comparable-product mental models.",
+        "Separate usability friction, unmet needs, and feature suggestions so fixes and roadmap ideas do not blur together.",
+        "Rank suggestions by impact-to-effort and stop after the agreed persona pass."
+      ],
+      "why": "Product ideas become more useful when they are tied to a specific persona, journey moment, and observed gap rather than brainstormed in the abstract.",
+      "implementationNote": "Do not touch production data, real accounts, pricing, or roadmap commitments without approval. Treat the output as product evidence, not a decision to build.",
+      "keywords": [
+        "product journey",
+        "persona review",
+        "feature feedback",
+        "user journey audit",
+        "product research"
+      ],
+      "related": [
+        {
+          "slug": "full-product-evaluation-loop",
+          "title": "The full product evaluation loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/full-product-evaluation-loop/"
+        },
+        {
+          "slug": "ui-ux-score-loop",
+          "title": "The UI/UX Score Loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/ui-ux-score-loop/"
+        },
+        {
+          "slug": "talk-to-five-buyers-loop",
+          "title": "The talk-to-five-buyers loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/talk-to-five-buyers-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "072",
+      "slug": "claim-ledger-research-loop",
+      "title": "The claim-ledger research loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/claim-ledger-research-loop/",
+      "category": {
+        "slug": "content",
+        "label": "Content"
+      },
+      "author": "Bucky, OpenClaw agent & COO, RVA Cyber",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A source-grounded research workflow for contested or decision-relevant claims that records provenance, evidence polarity, negative checks, confidence, and stopping reasons.",
+      "useWhen": "Use this when a research claim is contested, decision-relevant, or easy to overstate without a source-by-source evidence ledger.",
+      "prompt": "Investigate exactly one contested or decision-relevant claim. Define the claim, decision it supports, source scope, known evidence, conflicts, confidence target, and pass limit. Inventory sources by type and choose the next highest-value evidence action: retrieve a primary source, verify a citation, compare conflicts, extract facts, test an alternate explanation, run a negative check, or mark access blocked. Update a source ledger and claim ledger with provenance, extracted facts, reliability, limitations, and whether each fact supports, weakens, contradicts, contextualizes, or does not affect the claim. Stop at confidence, contradiction, underdetermination, unavailable access, human judgment, or no useful next action.",
+      "verification": {
+        "title": "The claim status is supported by a source and evidence ledger.",
+        "detail": "The final output names the claim status, source scope, source ledger, claim ledger, conflicts, negative checks, confidence, decision impact, next action or stopping reason, and never relies on uncited assertions."
+      },
+      "steps": [
+        "Define the claim, decision context, source scope, confidence target, known evidence, conflicts, and pass limit.",
+        "Inventory available sources and label their type and reliability before drawing conclusions.",
+        "Choose the next evidence action with the highest expected value for changing the claim status.",
+        "Update the source ledger and claim ledger with extracted facts, provenance, limitations, and evidence polarity.",
+        "Stop when confidence is reached, contradicted, blocked, underdetermined, or no next action could materially change the conclusion."
+      ],
+      "why": "A claim ledger keeps research from collapsing into narrative by showing which facts actually affect the claim and which source gaps remain.",
+      "implementationNote": "Never invent citations, hide uncertainty, or treat absence of evidence as disproof unless the source scope makes that inference valid.",
+      "keywords": [
+        "claim verification",
+        "research ledger",
+        "source provenance",
+        "evidence polarity",
+        "contested claims"
+      ],
+      "related": [
+        {
+          "slug": "epistemic-frontier-loop",
+          "title": "The epistemic frontier loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/epistemic-frontier-loop/"
+        },
+        {
+          "slug": "research-to-artifact-loop",
+          "title": "The research-to-artifact loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/research-to-artifact-loop/"
+        },
+        {
+          "slug": "pre-publish-source-check-loop",
+          "title": "The pre-publish source-check loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/pre-publish-source-check-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "073",
+      "slug": "genealogical-proof-loop",
+      "title": "The genealogical proof loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/genealogical-proof-loop/",
+      "category": {
+        "slug": "content",
+        "label": "Content"
+      },
+      "author": "Bucky, OpenClaw agent & COO, RVA Cyber",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A genealogy research workflow that tests one identity, relationship, date, place, migration, or record-linkage claim against source quality and proof evidence.",
+      "useWhen": "Use this when genealogy work needs to prove or disprove a specific person, relationship, date, place, migration, or record-linkage claim without merging uncertain identities.",
+      "prompt": "Resolve exactly one genealogy proof question, such as an identity, relationship, date, place, migration, or record-linkage claim. State the claim, proof standard, target person or family, jurisdiction, date range, known evidence, conflicts, repositories in scope, and unavailable source classes. Build an identity profile, separate original records from derivatives, and choose the next best evidence action: inspect a citation, retrieve one record, correlate records, test a same-name conflict, analyze associates, record a negative search, or mark access blocked. Update source and claim ledgers after each pass. Stop when the claim is proved, disproved, likely, possible, conflicting, unresolved, blocked, or no next source would change the result.",
+      "verification": {
+        "title": "The proof conclusion follows from cited records, conflicts, and negative searches.",
+        "detail": "The output includes the updated claim status, identity profile, source ledger, claim ledger, proof note, conflict list, negative-search log, next source if any, and stopping reason."
+      },
+      "steps": [
+        "State the exact proof question, required standard, known evidence, conflicts, scope, and unavailable source classes.",
+        "Build a compact identity profile from names, dates, places, relatives, associates, occupations, and other distinguishing facts.",
+        "Separate original records, derivative records, indexes, trees, stories, and summaries before drawing conclusions.",
+        "Choose one highest-value evidence action and update source and claim ledgers with reliability and limitations.",
+        "Write a proof note and stop at a clear status, blocker, approval need, or no material next source."
+      ],
+      "why": "Genealogy claims can look proven when similar names, derivative records, or family stories are merged too early; this loop keeps each proof element accountable.",
+      "implementationNote": "Do not merge possible people, relationships, dates, or places into proved facts. Paid-access repositories, living-person data, and sensitive family information require approval.",
+      "keywords": [
+        "genealogy proof",
+        "family history research",
+        "source correlation",
+        "negative search",
+        "identity proof"
+      ],
+      "related": [
+        {
+          "slug": "epistemic-frontier-loop",
+          "title": "The epistemic frontier loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/epistemic-frontier-loop/"
+        },
+        {
+          "slug": "research-to-artifact-loop",
+          "title": "The research-to-artifact loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/research-to-artifact-loop/"
+        },
+        {
+          "slug": "pre-publish-source-check-loop",
+          "title": "The pre-publish source-check loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/pre-publish-source-check-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "074",
+      "slug": "paid-api-preflight-loop",
+      "title": "The paid-API preflight loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/paid-api-preflight-loop/",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "AKT (@akt199009)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A spend-control workflow where an agent verifies fresh signed uptime, latency, and price attestations before using a paid API or x402 service.",
+      "useWhen": "Use this when an agent may spend money on paid APIs and should not trust listings or burn budget re-probing services before every call.",
+      "prompt": "Before paying for any pay-per-call or x402 service, fetch the latest reliability attestation from an index that continuously probes matching services. Verify the attestation signature against the index public key, check freshness, then compare measured uptime, latency, and price against the task budget and deadline. Proceed only with a service whose verified numbers fit. Record the attestation that justified each spend. Treat unverifiable, stale, or missing attestations as missing data. Stop when no listed service fits, budget approval is needed, or the task can be completed without paid calls.",
+      "verification": {
+        "title": "Every paid API decision cites a fresh signature-verified attestation.",
+        "detail": "The run record names the service, attestation timestamp, measured uptime, latency, price, signature verification result, budget fit, and reason for use or rejection."
+      },
+      "steps": [
+        "Find candidate services for the needed capability in a reliability index or approved source.",
+        "Fetch the latest attestation for each candidate and verify its signature against the index public key.",
+        "Reject stale, unverifiable, or missing attestations as missing data rather than service failures.",
+        "Choose only a service whose measured uptime, latency, and price fit the task budget and deadline.",
+        "Record the attestation behind each spend and stop when no verified option fits or approval is required."
+      ],
+      "why": "Paid API listings can show that a service exists without proving it is currently reliable, and repeated self-probing wastes money; signed attestations make verified probes reusable.",
+      "implementationNote": "An attestation is a spend gate, not a guarantee of task quality. Any actual purchase, budget increase, credential use, or external account change still needs the authority normally required for that environment.",
+      "keywords": [
+        "paid API verification",
+        "x402 preflight",
+        "signed attestation",
+        "agent spend control",
+        "API reliability"
+      ],
+      "related": [
+        {
+          "slug": "stale-safe-batch-release-loop",
+          "title": "The stale-safe batch release loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/stale-safe-batch-release-loop/"
+        },
+        {
+          "slug": "post-release-baseline-loop",
+          "title": "The post-release baseline loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/post-release-baseline-loop/"
+        },
+        {
+          "slug": "cross-run-playbook-loop",
+          "title": "The cross-run playbook loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/cross-run-playbook-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "075",
+      "slug": "expert-scorecard-loop",
+      "title": "The expert scorecard loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/expert-scorecard-loop/",
+      "category": {
+        "slug": "evaluation",
+        "label": "Evaluation"
+      },
+      "author": "herath",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A quality-improvement workflow that defines expert scoring dimensions, fixes the lowest score, and requires fresh independent rescoring after every pass.",
+      "useWhen": "Use this when an artifact needs expert-quality polish and subjective judgment must be tied to repeatable criteria and independent review.",
+      "prompt": "Bring one artifact to a verified 5 out of 5 on every dimension of an expert scorecard. Name the governing expert perspective and define five to nine scored dimensions, wiring objective checks such as tests, lint, build, accessibility, performance, or security scans to any dimensions they cover. Fix only the lowest-scoring dimension each pass. Then have a fresh independent reviewer rescore the whole artifact and name what remains below 5. Never score your own work, fake a 5, pad dimensions, or weaken checks. Stop when every dimension is 5, the lowest score has not risen for two rounds, the budget is spent, blocked, or approval is required.",
+      "verification": {
+        "title": "A fresh reviewer scorecard and objective checks support every 5 out of 5.",
+        "detail": "The final receipt includes the expert perspective, dimensions, objective check results, per-round scores, lowest-score actions, reviewer findings, terminal state, and any remaining below-5 dimensions."
+      },
+      "steps": [
+        "Name the expert perspective and define five to nine scored dimensions before editing.",
+        "Attach objective checks to the dimensions they can prove, so a red check blocks a perfect score.",
+        "Improve the lowest-scoring dimension with one bounded change.",
+        "Use a fresh independent reviewer to rescore the entire artifact after each pass.",
+        "Stop at all 5s, stagnation, exhausted budget, blocker, or approval boundary."
+      ],
+      "why": "A single score can hide weak dimensions; forcing the lowest score to move and using a fresh reviewer reduces self-approval and cosmetic progress.",
+      "implementationNote": "Use dimensions that can actually fall below perfect. Do not relax the bar, weaken objective checks, or let the maker be the final scorer.",
+      "keywords": [
+        "expert scorecard",
+        "quality rubric",
+        "independent review",
+        "artifact polish",
+        "5 out of 5"
+      ],
+      "related": [
+        {
+          "slug": "multi-llm-convergence-loop",
+          "title": "The multi-LLM convergence loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/multi-llm-convergence-loop/"
+        },
+        {
+          "slug": "ui-ux-score-loop",
+          "title": "The UI/UX Score Loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/ui-ux-score-loop/"
+        },
+        {
+          "slug": "self-improving-champion-loop",
+          "title": "The self-improving champion loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/self-improving-champion-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "076",
+      "slug": "product-contract-conformance-loop",
+      "title": "The product contract conformance loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/product-contract-conformance-loop/",
+      "category": {
+        "slug": "engineering",
+        "label": "Engineering"
+      },
+      "author": "Charlie Greenman (@chargrnmn)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A requirements-conformance workflow that turns a product contract into a ledger, checks current evidence, and repairs only confirmed mismatches with regression coverage.",
+      "useWhen": "Use this when a product contract, PRD, spec, or customer promise must be checked against the actual project before claims or implementation can be trusted.",
+      "prompt": "Audit the project against the supplied product contract. Extract every concrete product promise, business rule, permission rule, background job expectation, user workflow, non-goal, and quality bar into a requirement ledger. For each requirement, find current evidence in code, config, tests, docs, jobs, migrations, routes, UI, prompts, queues, or production-safe runtime state. Mark it proved, weak, contradicted, unimplemented, not applicable with reason, or blocked. Fix only confirmed high-impact mismatches one bounded slice at a time, preserving unrelated work and adding regression coverage where practical. Stop when every requirement is proved or honestly classified and the ledger has no silent gaps.",
+      "verification": {
+        "title": "Every product-contract requirement has an evidence-backed ledger status.",
+        "detail": "The final ledger lists every requirement, evidence location, status, fixes made, regression checks, blocked items, and why any N/A or weak classification is honest."
+      },
+      "steps": [
+        "Extract every concrete requirement, promise, rule, workflow, non-goal, and quality bar into a ledger.",
+        "Search current implementation evidence for each ledger item across code, config, tests, docs, jobs, UI, and safe runtime state.",
+        "Classify each item as proved, weak, contradicted, unimplemented, not applicable, or blocked with reason.",
+        "Fix one confirmed high-impact mismatch at a time and add regression coverage where practical.",
+        "Rerun affected checks and stop when the ledger has no silent gaps."
+      ],
+      "why": "A product contract is only useful if every promise can be traced to current evidence or an explicit gap; the ledger prevents selective proof.",
+      "implementationNote": "Ask before touching production, secrets, user data, destructive operations, or public claims. Do not broaden scope beyond the supplied contract.",
+      "keywords": [
+        "product contract",
+        "requirements conformance",
+        "spec audit",
+        "product promises",
+        "requirement ledger"
+      ],
+      "related": [
+        {
+          "slug": "codex-completion-contract-loop",
+          "title": "The Codex completion-contract loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/codex-completion-contract-loop/"
+        },
+        {
+          "slug": "groundtruth-audit-loop",
+          "title": "The Groundtruth loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/groundtruth-audit-loop/"
+        },
+        {
+          "slug": "promise-to-proof-loop",
+          "title": "The promise-to-proof loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/promise-to-proof-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "077",
+      "slug": "micro-interaction-latency-loop",
+      "title": "The micro-interaction latency loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/micro-interaction-latency-loop/",
+      "category": {
+        "slug": "design",
+        "label": "Design"
+      },
+      "author": "Tushar Kalan (@DilSalaKamina)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A design-system workflow that checks interaction timing tokens and component specs against latency thresholds, fixes the highest-severity violation, and records compliance evidence.",
+      "useWhen": "Use this when a design system needs motion and interaction timing to stay consistent, responsive, and token-driven across components.",
+      "prompt": "When motion tokens or interaction specs change, audit every interactive component against the current timing rules. Extract token values, find hardcoded timings, map each component to its motion token, and flag hover or click feedback above 100 ms, page transitions above 1000 ms, async operations above 1000 ms without a loading indicator, and any hardcoded timing. Fix the highest-severity violation by updating tokens or specs, then rerun the same compliance check. Stop when no violations remain, a product decision blocks the fix, or the agreed review scope is complete.",
+      "verification": {
+        "title": "The interaction audit reports zero timing violations or explicit blockers.",
+        "detail": "The final audit lists each component, original timing, token reference, violation type, fix, compliance status, and any blocker that requires product judgment."
+      },
+      "steps": [
+        "Load current motion tokens and interaction specs, then extract timing references for each component.",
+        "Classify feedback, transition, async, and hardcoded-timing violations against the chosen latency rules.",
+        "Choose the highest-severity fix that can be made without changing product intent.",
+        "Update the relevant token or spec and rerun the full compliance check.",
+        "Record the audit trail and stop at full compliance, blocker, or completed scope."
+      ],
+      "why": "Small latency inconsistencies accumulate into a sluggish product; tying components to tokens and rerunning the same audit keeps interaction feel measurable.",
+      "implementationNote": "Do not mask real server latency with fake compliance. If product or infrastructure constraints block the fix, record the blocker instead of forcing a token change.",
+      "keywords": [
+        "micro interaction latency",
+        "motion tokens",
+        "interaction specs",
+        "design system timing",
+        "loading indicator"
+      ],
+      "related": [
+        {
+          "slug": "propagation-compliance-loop",
+          "title": "The propagation compliance loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/propagation-compliance-loop/"
+        },
+        {
+          "slug": "ui-ux-score-loop",
+          "title": "The UI/UX Score Loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/ui-ux-score-loop/"
+        },
+        {
+          "slug": "accessibility-repair-loop",
+          "title": "The accessibility repair loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/accessibility-repair-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "078",
+      "slug": "persona-coherence-loop",
+      "title": "The persona coherence loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/persona-coherence-loop/",
+      "category": {
+        "slug": "content",
+        "label": "Content"
+      },
+      "author": "Tushar Kalan (@DilSalaKamina)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A UX research maintenance workflow that compares persona assumptions with recent research data, scores coherence, and rebuilds personas when contradictions accumulate.",
+      "useWhen": "Use this when personas may have drifted from current user research and product or design decisions depend on them.",
+      "prompt": "When new research arrives or personas may be stale, read each persona and extract its behavioral assumptions. Compare assumptions with recent research evidence, labeling each reinforced, contradicted, or unverified. Compute a coherence score from the evidence, and rebuild a persona only when the score falls below the agreed threshold and contradictions are material. Every defining trait in a rebuilt persona must cite enough current user evidence to support it. Update the persona timestamp and coherence log. Stop per persona when it is coherent, needs human review, lacks enough research, or hits the rebuild limit.",
+      "verification": {
+        "title": "Every persona trait is supported by recent research or flagged for review.",
+        "detail": "The output includes the persona assumptions, evidence labels, coherence score, contradiction count, rebuild count, cited supporting evidence, updated timestamp, and any human-review status."
+      },
+      "steps": [
+        "Extract behavioral assumptions from each persona before comparing them with new research.",
+        "Search recent research for reinforcing, contradicting, or missing evidence for each assumption.",
+        "Compute a coherence score and identify material contradictions.",
+        "Rebuild only personas that fall below the threshold and cite current evidence for every defining trait.",
+        "Update the persona record and log, then stop at coherence, insufficient data, rebuild limit, or human-review need."
+      ],
+      "why": "Personas can remain persuasive long after their evidence goes stale; a coherence loop keeps them useful without rewriting them on every new quote.",
+      "implementationNote": "Do not invent user quotes or treat one anecdote as proof. Protect private research data and keep citations appropriate for the project.",
+      "keywords": [
+        "persona coherence",
+        "UX research",
+        "user personas",
+        "research evidence",
+        "persona maintenance"
+      ],
+      "related": [
+        {
+          "slug": "talk-to-five-buyers-loop",
+          "title": "The talk-to-five-buyers loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/talk-to-five-buyers-loop/"
+        },
+        {
+          "slug": "research-to-artifact-loop",
+          "title": "The research-to-artifact loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/research-to-artifact-loop/"
+        },
+        {
+          "slug": "full-product-evaluation-loop",
+          "title": "The full product evaluation loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/full-product-evaluation-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "079",
+      "slug": "empathy-saturation-loop",
+      "title": "The empathy saturation loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/empathy-saturation-loop/",
+      "category": {
+        "slug": "content",
+        "label": "Content"
+      },
+      "author": "Tushar Kalan (@DilSalaKamina)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A UX research synthesis workflow that clusters verbatim pain points, tracks severity and frequency, and stops when evidence reaches saturation.",
+      "useWhen": "Use this when qualitative user research needs to become a prioritized pain-point map and the team needs to know when enough transcripts have been reviewed.",
+      "prompt": "Process unreviewed user transcripts in batches. Extract verbatim pain-point quotes, cluster them against the existing pain-point manifest, create new clusters only when the quote does not fit an existing theme, and update frequency and severity when new evidence changes a cluster. After each batch, rerun the same saturation check: whether the last two batches produced zero new clusters, enough total clusters exist, and enough transcripts have been processed. Stop at confirmed saturation, the transcript cap, low-quality input, blocked access, or human-review need. Return the manifest, batch log, weighted priorities, and stopping reason.",
+      "verification": {
+        "title": "Pain-point clusters and saturation status are backed by transcript evidence.",
+        "detail": "The final manifest includes cluster IDs, labels, frequency, severity, weighted score, representative quotes, processed transcript count, batch log, saturation check, skipped inputs, and stop reason."
+      },
+      "steps": [
+        "Identify unprocessed transcripts and extract only verbatim pain-point quotes.",
+        "Cluster new quotes against the existing manifest before creating new themes.",
+        "Update cluster frequency, severity, representative quote, and weighted priority after each batch.",
+        "Run the same saturation check after every batch.",
+        "Stop at confirmed saturation, transcript cap, low-quality input, blocked access, or human-review need."
+      ],
+      "why": "Transcript synthesis needs a stop rule; saturation evidence prevents endless reading while preserving the user words behind each priority.",
+      "implementationNote": "Treat transcripts as sensitive research data. Do not expose private quotes outside the approved workspace or overstate a theme that lacks enough evidence.",
+      "keywords": [
+        "empathy saturation",
+        "user transcripts",
+        "pain point clusters",
+        "UX synthesis",
+        "qualitative research"
+      ],
+      "related": [
+        {
+          "slug": "talk-to-five-buyers-loop",
+          "title": "The talk-to-five-buyers loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/talk-to-five-buyers-loop/"
+        },
+        {
+          "slug": "research-to-artifact-loop",
+          "title": "The research-to-artifact loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/research-to-artifact-loop/"
+        },
+        {
+          "slug": "one-post-a-week-loop",
+          "title": "The one-post-a-week loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/one-post-a-week-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "080",
+      "slug": "cost-reduction-loop",
+      "title": "The cost-reduction loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/cost-reduction-loop/",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "AKT (@akt199009)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "An operations workflow that attributes current spend, applies one approved savings change, and keeps it only when cost drops without guardrail regressions.",
+      "useWhen": "Use this when cloud, API, infrastructure, model, or operational spend needs to decrease while reliability and correctness must remain protected.",
+      "prompt": "Reduce spend on the target system toward the agreed budget without weakening correctness, performance, reliability, or service-level objectives. First read current cost and usage, then attribute spend to the largest drivers. Each pass, propose the single highest-saving safe change and get approval before any billing, infrastructure, production, or user-impacting change. Apply the change only within that authority, then measure cost and guardrail metrics over the agreed window. Keep it only if cost drops and no guardrail regresses. Stop at budget, no safe saving remains, no measurable progress, blocked access, or approval need.",
+      "verification": {
+        "title": "Each retained cost change lowers spend without guardrail regression.",
+        "detail": "The final receipt includes baseline cost, usage drivers, proposed changes, approvals, cost deltas, guardrail metrics, measurement windows, reverted or rejected changes, and stopping reason."
+      },
+      "steps": [
+        "Read current cost and usage data, then attribute spend to the largest drivers.",
+        "Choose the single highest-saving safe change for the next pass.",
+        "Get approval before billing, infrastructure, production, or user-impacting changes.",
+        "Measure cost and guardrail metrics over the same window after the change.",
+        "Keep only changes that save money without regressions and stop at budget, no safe saving, blocker, or no progress."
+      ],
+      "why": "Cost cuts can quietly break reliability or correctness; this loop makes every saving compete against explicit guardrail metrics.",
+      "implementationNote": "Do not change plans, quotas, infrastructure, production routing, data retention, or paid services without explicit authority.",
+      "keywords": [
+        "cost reduction",
+        "cloud spend",
+        "guardrail metrics",
+        "operations savings",
+        "budget optimization"
+      ],
+      "related": [
+        {
+          "slug": "stale-safe-batch-release-loop",
+          "title": "The stale-safe batch release loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/stale-safe-batch-release-loop/"
+        },
+        {
+          "slug": "production-data-cleanup-loop",
+          "title": "The production data cleanup loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/production-data-cleanup-loop/"
+        },
+        {
+          "slug": "post-release-baseline-loop",
+          "title": "The post-release baseline loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/post-release-baseline-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "081",
+      "slug": "ai-agent-workspace-health-check",
+      "title": "The AI-agent workspace health check",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/ai-agent-workspace-health-check/",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "Shinichi Nagata (@DecisionOS)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A read-only restartability audit that inspects source of truth, accepted state, handoff freshness, instruction health, stale artifacts, and the next safe action.",
+      "useWhen": "Use this before continuing a long-running AI-agent workspace when state, handoff, source of truth, or next safe action may be unclear.",
+      "prompt": "Read the repo, workspace, or supplied AI-agent session trace as a restartability audit. Do not edit files. Check the living source of truth, accepted state or SHA, branch safety, handoff freshness, stale artifacts, preview versus public versus test mismatch, always-loaded agent instructions, unresolved items, and the next safe action. Classify the workspace green, yellow, or red with evidence only from the repo, workspace, or trace. If green, say whether it is disciplined or merely low-complexity. Stop after the read-only audit and return the verdict, evidence, unclear state, stale items, instruction risks, and one safe next action.",
+      "verification": {
+        "title": "The workspace health verdict is backed by concrete restartability evidence.",
+        "detail": "The output includes a green/yellow/red signal, source of truth, accepted state, handoff freshness, instruction health findings, unresolved items, stale artifacts, evidence citations, and one safe next action."
+      },
+      "steps": [
+        "Read current workspace, repo, or trace evidence without editing files.",
+        "Identify the living source of truth, accepted state, handoff freshness, branch safety, stale artifacts, and instruction risks.",
+        "Classify unresolved or unclosed items that make continuation unsafe.",
+        "Assign a green, yellow, or red verdict backed only by found evidence.",
+        "Return one safe next action and stop without making changes."
+      ],
+      "why": "Long AI-agent work can look busy while becoming unrestartable; a read-only health check reveals whether another agent can safely continue.",
+      "implementationNote": "This is not a safety badge and does not authorize cleanup, deployment, deletion, or continuation. It only reports current restartability.",
+      "keywords": [
+        "AI workspace health",
+        "restartability",
+        "handoff freshness",
+        "agent instructions",
+        "source of truth"
+      ],
+      "related": [
+        {
+          "slug": "restartable-handoff-loop",
+          "title": "The restartable handoff loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/restartable-handoff-loop/"
+        },
+        {
+          "slug": "next-action-confidence-check",
+          "title": "The next-action confidence check",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/next-action-confidence-check/"
+        },
+        {
+          "slug": "living-story-loop",
+          "title": "The Living Story loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/living-story-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "082",
+      "slug": "spec-dev-review-loop",
+      "title": "The spec dev-review loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/spec-dev-review-loop/",
+      "category": {
+        "slug": "engineering",
+        "label": "Engineering"
+      },
+      "author": "Ximanta (@kharamdau)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A specification-quality workflow that writes ticket-scoped planning artifacts, applies critical gates, logs review rounds, and stops only at approval or a clear blocker.",
+      "useWhen": "Use this when a ticket is too risky or ambiguous to implement until its requirements, edge cases, task plan, and review rubric agree.",
+      "prompt": "For one ticket or story, write a scoped spec packet: findings, progress, task plan, and a rubric with critical gates and edge cases derived from that ticket. Verify factual claims against the repo before relying on them. After each edit round, run an independent adversarial review against the rubric and require it to check that prior findings remain resolved. If the review finds material issues, fix every affected spec file consistently, append the finding and fix to the review log, and review again. Stop only when the reviewer returns ready with no material findings, or when the round cap is reached and the remaining blocker is logged for human decision.",
+      "verification": {
+        "title": "The spec packet is approved against its own rubric with a complete review log.",
+        "detail": "The final output includes the spec files, ticket-derived rubric, review rounds, prior-finding regression checks, fixes applied, final ready/not-ready verdict, and any blocker requiring human decision."
+      },
+      "steps": [
+        "Derive the spec packet and critical rubric gates from the current ticket, not from a generic template.",
+        "Verify repo-fact claims before adding them to findings or the task plan.",
+        "Run an independent adversarial review against the rubric and prior review log.",
+        "Fix all affected spec files consistently and append each finding and fix to the review log.",
+        "Stop at a clean ready verdict or a logged blocker after the round cap."
+      ],
+      "why": "A spec can look complete while its files contradict each other; repeated adversarial review against ticket-specific gates catches drift before implementation.",
+      "implementationNote": "Do not start implementation inside this loop. Keep review tooling, file names, and round caps adapted to the project rather than hard-coding one platform.",
+      "keywords": [
+        "spec review",
+        "ticket planning",
+        "adversarial review",
+        "rubric gates",
+        "implementation spec"
+      ],
+      "related": [
+        {
+          "slug": "goal-forge-loop",
+          "title": "The Goal Forge loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/goal-forge-loop/"
+        },
+        {
+          "slug": "multi-llm-convergence-loop",
+          "title": "The multi-LLM convergence loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/multi-llm-convergence-loop/"
+        },
+        {
+          "slug": "codex-completion-contract-loop",
+          "title": "The Codex completion-contract loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/codex-completion-contract-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "083",
+      "slug": "viral-product-margin-audit-loop",
+      "title": "The viral product margin audit loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/viral-product-margin-audit-loop/",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "Subramanyam Badhika",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A commerce research workflow that finds fresh product demand, verifies supplier costs, calculates margin, filters IP and MOQ risks, and stops with a validated candidate or no-go.",
+      "useWhen": "Use this when evaluating commerce product ideas and the decision depends on current demand, supplier economics, and risk filtering rather than intuition.",
+      "prompt": "Identify high-margin product opportunities within the specified niche or market. If the niche is missing, ask and stop. Use only fresh demand signals from approved feeds, ad libraries, or social sources, then shortlist products with clear velocity. For each candidate, record the value proposition, retail price, supplier URLs, unit cost, minimum order quantity, shipping estimate, and IP or trademark risk. Calculate gross margin using the agreed acquisition buffer and reject candidates below the margin floor, above the investment cap, with unverifiable costs, or with immediate legal risk. Repeat up to the research-round cap and stop with a validated candidate, no-go result, blocked access, or approval need.",
+      "verification": {
+        "title": "The winning product has fresh demand evidence, supplier proof, margin math, and risk gates.",
+        "detail": "The final payload includes demand sources, supplier URLs, unit economics, margin calculation, rejected candidates with reasons, IP or trademark notes, validation plan, and the stopping reason."
+      },
+      "steps": [
+        "Ask for the target niche or market if it is not already specified.",
+        "Find fresh demand signals from approved discovery sources and shortlist distinct candidate products.",
+        "Verify supplier costs, shipping, minimum order quantity, retail price, and IP or trademark risk from primary sources.",
+        "Calculate margins with the agreed buffer and reject candidates that fail margin, investment, evidence, or legal gates.",
+        "Stop with a validated candidate, no-go result, blocked access, approval need, or exhausted research cap."
+      ],
+      "why": "Trending-product research is easy to fake with stale social proof or guessed supplier numbers; this loop forces fresh demand, primary cost evidence, and explicit risk gates.",
+      "implementationNote": "Do not place orders, scrape against terms, contact suppliers, launch ads, use trademarks, or make financial commitments without explicit approval.",
+      "keywords": [
+        "product validation",
+        "margin audit",
+        "supplier research",
+        "social demand",
+        "commerce research"
+      ],
+      "related": [
+        {
+          "slug": "talk-to-five-buyers-loop",
+          "title": "The talk-to-five-buyers loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/talk-to-five-buyers-loop/"
+        },
+        {
+          "slug": "one-post-a-week-loop",
+          "title": "The one-post-a-week loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/one-post-a-week-loop/"
+        },
+        {
+          "slug": "research-to-artifact-loop",
+          "title": "The research-to-artifact loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/research-to-artifact-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "084",
+      "slug": "world-state-accountability-loop",
+      "title": "The world-state accountability loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/world-state-accountability-loop/",
+      "category": {
+        "slug": "evaluation",
+        "label": "Evaluation"
+      },
+      "author": "Nishant Dodiya (@NishantDodiya4)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A general agent-control workflow that turns each meaningful action into a bounded prediction, verification, and continue-or-stop decision.",
+      "useWhen": "Use this when an agent is about to change code, files, tools, APIs, research, product decisions, infrastructure, or any system state where assumptions could cause drift.",
+      "prompt": "Before a meaningful action, build a compact current-state model: known facts, uncertainties, missing evidence, relevant systems, constraints, user goals, and granted authority. Identify the risky assumption the agent is tempted to make, then propose the smallest useful next action. Before acting, predict what should change, what should remain unchanged, what evidence will confirm success, and what would count as surprise or failure. Act only if the action is in scope and verifiable. Afterward, compare predicted and actual state, record the trace, and continue only if the model still holds, risk has not increased, and another bounded pass is justified. Stop at target state, material prediction failure, blocker, approval boundary, or no justified next action.",
+      "verification": {
+        "title": "Every action has a before-state model, prediction, after-state evidence, and continue-or-stop decision.",
+        "detail": "The accountability trace includes current state, uncertainty, proposed action, predicted result, action taken, evidence checked, predicted-versus-actual comparison, surprises, risk changes, and the final decision."
+      },
+      "steps": [
+        "Build a compact model of current facts, uncertainties, constraints, authority, and relevant systems.",
+        "Name the risky missing state or assumption before choosing an action.",
+        "Predict the intended state change, unchanged boundaries, success evidence, and failure signals.",
+        "Take only one bounded in-scope action with a clear verification method.",
+        "Compare predicted and actual state, record surprises, and stop or continue based on evidence."
+      ],
+      "why": "Agents often continue from stale assumptions; requiring a prediction before action makes drift and unintended consequences visible.",
+      "implementationNote": "Any production, money, security, privacy, external communication, irreversible state, or public-claim boundary still requires normal human approval.",
+      "keywords": [
+        "world state",
+        "agent accountability",
+        "prediction check",
+        "state model",
+        "bounded action"
+      ],
+      "related": [
+        {
+          "slug": "evidence-first-feature-loop",
+          "title": "The evidence-first feature loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/evidence-first-feature-loop/"
+        },
+        {
+          "slug": "next-action-confidence-check",
+          "title": "The next-action confidence check",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/next-action-confidence-check/"
+        },
+        {
+          "slug": "groundtruth-audit-loop",
+          "title": "The Groundtruth loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/groundtruth-audit-loop/"
+        }
+      ],
+      "reviews": [],
+      "averageRating": 5.0
+    },
+    {
+      "number": "085",
+      "slug": "fleet-overwatch-efficiency-loop",
+      "title": "The fleet overwatch efficiency loop",
+      "url": "https://signals.forwardfuture.com/loop-library/loops/fleet-overwatch-efficiency-loop/",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "Frosty40 (@frostforger)",
+      "published": "2026-07-07",
+      "modified": "2026-07-07",
+      "description": "A fleet-operations workflow that classifies worker health, splits work into tracked chunks, reallocates based on throughput, and records utilization and results.",
+      "useWhen": "Use this when many authorized workers need continuous coordination across a large bounded search or batch-processing space.",
+      "prompt": "Operate only on authorized machines, approved ranges, and approved work types. Read current fleet state, classify each worker as idle, active, stalled, failed, slow, or high-performing, then split remaining work into tracked non-overlapping chunks. Allocate chunks based on worker speed, health, CPU, GPU, RAM, recent yield, and the agreed scout/prover/hunter/reserve mix. Run short probes, promote promising regions, kill bad leads, reload idle or failed workers, requeue unfinished work from dead or stalled workers, deduplicate candidates, and push strong candidates through the agreed proof chain. Stop when no approved work remains, utilization cannot improve safely, the cap is reached, or approval is required.",
+      "verification": {
+        "title": "Fleet utilization and completed work improve without duplicate or unauthorized work.",
+        "detail": "The report includes worker classifications, chunk assignments, completed ranges, requeued work, failures, utilization, throughput, candidates, promoted leads, proof-chain status, strategy shifts, and stop reason."
+      },
+      "steps": [
+        "Read fleet state and classify worker health, capacity, speed, and recent yield.",
+        "Split the remaining approved work into tracked non-overlapping chunks.",
+        "Assign work based on worker health and the agreed scout/prover/hunter/reserve allocation.",
+        "Promote promising regions, kill bad leads, reload idle workers, and requeue work from failed or stalled workers.",
+        "Report utilization, throughput, candidates, proof status, and strategy shifts until no safe improvement remains."
+      ],
+      "why": "Large worker fleets waste time when chunks overlap, failed workers hold work, or every machine receives the same strategy despite different yield.",
+      "implementationNote": "Do not use this for unauthorized systems, credential attacks, scraping beyond permission, or unapproved ranges. Keep all work boundaries explicit and auditable.",
+      "keywords": [
+        "fleet orchestration",
+        "worker allocation",
+        "batch processing",
+        "parallel search",
+        "compute utilization"
+      ],
+      "related": [
+        {
+          "slug": "loop-harness-verification-loop",
+          "title": "The Loop Harness verification loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/loop-harness-verification-loop/"
+        },
+        {
+          "slug": "stale-safe-batch-release-loop",
+          "title": "The stale-safe batch release loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/stale-safe-batch-release-loop/"
+        },
+        {
+          "slug": "five-minute-repository-maintainer-loop",
+          "title": "The five-minute repository maintainer loop",
+          "url": "https://signals.forwardfuture.com/loop-library/loops/five-minute-repository-maintainer-loop/"
         }
       ],
       "reviews": [],
