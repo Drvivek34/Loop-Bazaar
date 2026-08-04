@@ -1,14 +1,18 @@
 import unittest
 import json
 import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from loop_data import load_database
 
 class TestLoopsDatabase(unittest.TestCase):
     def setUp(self):
-        self.db_path = "/root/Loop-Bazaar/loops_data.json"
+        self.db_path = str(Path(__file__).resolve().parent / "loops_data.json")
         self.assertTrue(os.path.exists(self.db_path), "Database file loops_data.json does not exist")
-        
-        with open(self.db_path, "r", encoding="utf-8") as f:
-            self.data = json.load(f)
+
+        self.data = load_database(self.db_path)
 
     def test_schema_version(self):
         self.assertIn("schemaVersion", self.data)
@@ -21,19 +25,19 @@ class TestLoopsDatabase(unittest.TestCase):
 
     def test_loop_properties(self):
         required_keys = [
-            "number", "slug", "title", "category", "author", 
-            "published", "modified", "description", "prompt", 
-            "verification", "steps", "why", "keywords", 
+            "number", "slug", "title", "category", "author",
+            "published", "modified", "description", "prompt",
+            "verification", "steps", "why", "keywords",
             "reviews", "averageRating"
         ]
-        
+
         valid_categories = ["engineering", "evaluation", "operations", "content", "design"]
 
         for idx, loop in enumerate(self.data["loops"]):
             # Check required keys
             for key in required_keys:
                 self.assertIn(key, loop, f"Loop at index {idx} ({loop.get('title', 'Unknown')}) is missing required key '{key}'")
-            
+
             # Check slug format
             slug = loop["slug"]
             self.assertTrue(slug.islower(), f"Slug '{slug}' must be lowercase")

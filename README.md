@@ -4,9 +4,9 @@
 
 [![Mega AI Bazaar](https://img.shields.io/badge/🌐_Mega_AI_Bazaar-browse_all-6C5CE7)](https://drvivek34.github.io/Mega-AI-Bazaar/)
 
-Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5064** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
+Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5121** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
-*Last updated: 2026-07-08 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
+*Last updated: 2026-08-04 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
 
 ## 🔌 Supported Platforms & Agentic Rigs
 The workflows and prompts in Loop-Bazaar are designed to be environment-agnostic and can be implemented in a wide range of platforms:
@@ -349,6 +349,9 @@ Click on the titles to view complete details (Prompts, Steps, and Why it works) 
 | #083 | Operations | [The viral product margin audit loop](operations/viral-product-margin-audit-loop.md) | Subramanyam Badhika | ★★★★★ 5.0 | A commerce research workflow that finds fresh product demand, verifies supplier costs, calculates margin, filters IP and MOQ risks, and stops with a validated candidate or no-go. |
 | #084 | Evaluation | [The world-state accountability loop](evaluation/world-state-accountability-loop.md) | Nishant Dodiya (@NishantDodiya4) | ★★★★★ 5.0 | A general agent-control workflow that turns each meaningful action into a bounded prediction, verification, and continue-or-stop decision. |
 | #085 | Operations | [The fleet overwatch efficiency loop](operations/fleet-overwatch-efficiency-loop.md) | Frosty40 (@frostforger) | ★★★★★ 5.0 | A fleet-operations workflow that classifies worker health, splits work into tracked chunks, reallocates based on throughput, and records utilization and results. |
+| #5065 | Evaluation | [The free API offer verification loop](evaluation/free-api-offer-verification-loop.md) | Drvivek34 | ★★★★★ 5.0 | A repeatable catalog-maintenance workflow for checking current free-tier claims against first-party pricing and limits pages before publishing or renewing an API offer. |
+| #5066 | Operations | [The cross-repo catalog sync loop](operations/cross-repo-catalog-sync-loop.md) | Drvivek34 | ★★★★★ 5.0 | A bounded maintenance workflow that keeps catalog repositories, generated READMEs, counts, links, and the Mega AI Bazaar landing metadata aligned. |
+| #5067 | Evaluation | [The defensive agent-research refresh loop](evaluation/defensive-agent-research-refresh-loop.md) | Drvivek34 | ★★★★★ 5.0 | A safety-bounded research workflow for refreshing an LLM red-team catalog with public, citable findings and matching mitigations. |
 | #0035 | Content | [The Kubernetes Svg Assets Optimizes Loop](content/kubernetes-svg-assets-optimizes-0035.md) | @guido_vr | ★★★★☆ 4.9 | A repeatable agent workflow that optimizes SVG assets in Kubernetes and stops when performance benchmark is met. |
 | #0038 | Engineering | [The NestJS Data Backup Logs Refactors Loop](engineering/nestjs-data-backup-logs-refactors-0038.md) | @richard_s | ★★★★☆ 4.9 | A repeatable agent workflow that refactors data backup logs in NestJS and stops when error rate drops below 0.1%. |
 | #0055 | Evaluation | [The TailwindCSS Unused Imports Validates Loop](evaluation/tailwindcss-unused-imports-validates-0055.md) | @inferencegod | ★★★★☆ 4.9 | A repeatable agent workflow that validates unused imports in TailwindCSS and stops when compliance report returns zero warnings. |

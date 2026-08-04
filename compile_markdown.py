@@ -1,16 +1,18 @@
 import json
 import os
+from pathlib import Path
 
-DB_PATH = "/root/Loop-Bazaar/loops_data.json"
-REPO_DIR = "/root/Loop-Bazaar"
+from loop_data import load_database
+
+REPO_DIR = str(Path(__file__).resolve().parent)
+DB_PATH = os.path.join(REPO_DIR, "loops_data.json")
 
 def compile_markdown():
     if not os.path.exists(DB_PATH):
         print(f"Database {DB_PATH} not found.")
         return
 
-    with open(DB_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    data = load_database(DB_PATH)
 
     loops = data.get("loops", [])
     updated_date = data.get("updated", "2026-06-20")
@@ -18,7 +20,7 @@ def compile_markdown():
     categories = data.get("categories", [])
 
     print("Compiling root README.md...")
-    
+
     # 1. Start root README content
     readme = []
     readme.append("# 🌟 Loop-Bazaar: The Curated AI Agent Loops Directory")
@@ -26,7 +28,7 @@ def compile_markdown():
     readme.append("\n[![Mega AI Bazaar](https://img.shields.io/badge/🌐_Mega_AI_Bazaar-browse_all-6C5CE7)](https://drvivek34.github.io/Mega-AI-Bazaar/)")
     readme.append(f"\nWelcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **{total_count}** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.")
     readme.append(f"\n*Last updated: {updated_date} | Version: 1.0.0 | Daily updates at 6:00 AM IST*")
-    
+
     # Add supported platforms section
     readme.append("\n## 🔌 Supported Platforms & Agentic Rigs")
     readme.append("The workflows and prompts in Loop-Bazaar are designed to be environment-agnostic and can be implemented in a wide range of platforms:")
@@ -70,12 +72,12 @@ def compile_markdown():
         desc = loop.get("description", "")
         cat_slug = loop["category"]["slug"]
         cat_label = loop["category"]["label"]
-        
+
         # Link to the standalone file in the category directory
         link = f"{cat_slug}/{slug}.md"
         stars = "★" * int(rating) + "☆" * (5 - int(rating))
         readme.append(f"| #{num} | {cat_label} | [{title}]({link}) | {author} | {stars} {rating} | {desc} |")
-        
+
         # Add to category grouping
         cat_loops[cat_slug].append(loop)
 
@@ -90,11 +92,11 @@ def compile_markdown():
         cat_slug = cat["slug"]
         cat_label = cat["label"]
         list_of_loops = cat_loops[cat_slug]
-        
+
         # Create category folder
         cat_dir = os.path.join(REPO_DIR, cat_slug)
         os.makedirs(cat_dir, exist_ok=True)
-        
+
         # Build category master loop file (category/README.md)
         print(f"Compiling category master file {cat_slug}/README.md...")
         cat_readme = []
@@ -104,10 +106,10 @@ def compile_markdown():
         cat_readme.append("\n## Category Index Table")
         cat_readme.append("\n| ID | Title | Author | Rating | Notes / Use Cases |")
         cat_readme.append("|---|---|---|---|---|")
-        
+
         # Sort category loops chronologically by loop number
         sorted_cat_loops = sorted(list_of_loops, key=lambda l: l.get("number", "0000"))
-        
+
         for loop in sorted_cat_loops:
             num = loop.get("number", "0000")
             slug = loop.get("slug", "unknown")
@@ -115,19 +117,19 @@ def compile_markdown():
             author = loop.get("author", "Anonymous")
             rating = loop.get("averageRating", 5.0)
             desc = loop.get("description", "")
-            
+
             # Category index table links to the smaller loop file
             link_to_smaller = f"{slug}.md"
             stars = "★" * int(rating) + "☆" * (5 - int(rating))
             cat_readme.append(f"| #{num} | [{title}]({link_to_smaller}) | {author} | {stars} {rating} | {desc} |")
-            
+
             # Generate the smaller detailed file for the individual loop
             compile_smaller_loop_file(loop, cat_dir, cat_label)
 
         # Write category README.md
         with open(os.path.join(cat_dir, "README.md"), "w", encoding="utf-8") as f:
             f.write("\n".join(cat_readme))
-        
+
         print(f"Category master {cat_slug}/README.md compiled successfully.")
 
 def compile_smaller_loop_file(loop, cat_dir, cat_label):
@@ -145,35 +147,35 @@ def compile_smaller_loop_file(loop, cat_dir, cat_label):
     why = loop.get("why", "")
     note = loop.get("implementationNote", "")
     keywords = ", ".join(loop.get("keywords", []))
-    
+
     loop_md = []
     loop_md.append(f"# {title}")
     loop_md.append(f"\n**Loop ID**: #{num} | **Category**: {cat_label} | **Author**: {author} | **Rating**: ⭐ {rating}/5.0")
     loop_md.append("\n[← Back to Category Index](README.md) | [← Back to Root Index](../README.md)")
     loop_md.append("\n---")
-    
+
     loop_md.append(f"\n## 📝 Description")
     loop_md.append(desc)
-    
+
     loop_md.append(f"\n## 🎯 Use Case (When to Use)")
     loop_md.append(f"> {use_when}")
-    
+
     loop_md.append(f"\n## ⚡ System Prompt / Instructions")
     loop_md.append("```")
     loop_md.append(prompt)
     loop_md.append("```")
-    
+
     loop_md.append(f"\n## 🏁 Implementation Steps")
     for idx, step in enumerate(loop["steps"]):
         loop_md.append(f"{idx + 1}. {step}")
-    
+
     loop_md.append(f"\n## 🛑 Stopping Condition (Verification)")
     loop_md.append(f"**Verification Check**: {ver_title}")
     loop_md.append(f"- *Detail*: {ver_detail}")
-    
+
     loop_md.append(f"\n## 💡 Why it works")
     loop_md.append(why)
-    
+
     if note:
         loop_md.append(f"\n## ⚠️ Implementation Note")
         loop_md.append(f"* {note}")

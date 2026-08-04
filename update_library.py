@@ -4,10 +4,13 @@ import re
 import subprocess
 import urllib.request
 from datetime import datetime
+from pathlib import Path
+
+from loop_data import load_database, save_database
 
 # Configurations
-DB_PATH = "/root/Loop-Bazaar/loops_data.json"
-REPO_DIR = "/root/Loop-Bazaar"
+REPO_DIR = str(Path(__file__).resolve().parent)
+DB_PATH = os.path.join(REPO_DIR, "loops_data.json")
 CATALOG_URL = "https://signals.forwardfuture.ai/loop-library/catalog.json"
 
 def run_cmd(cmd, cwd=REPO_DIR):
@@ -28,7 +31,7 @@ def scrape_latest_loops(db_data):
         req = urllib.request.Request(CATALOG_URL, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
         with urllib.request.urlopen(req) as response:
             external_data = json.loads(response.read().decode('utf-8'))
-        
+
         existing_slugs = {loop["slug"] for loop in db_data.get("loops", [])}
         new_loops_count = 0
 
@@ -42,7 +45,7 @@ def scrape_latest_loops(db_data):
                 db_data["loops"].append(ext_loop)
                 existing_slugs.add(slug)
                 new_loops_count += 1
-        
+
         print(f"Finished scraping. Added {new_loops_count} new loops.")
         return new_loops_count
     except Exception as e:
@@ -65,7 +68,7 @@ def process_github_pull_requests():
         if not pr_list_out:
             print("No open PRs found.")
             return
-        
+
         prs = json.loads(pr_list_out)
         print(f"Found {len(prs)} open Pull Requests.")
 
@@ -73,17 +76,17 @@ def process_github_pull_requests():
             pr_num = pr["number"]
             pr_title = pr["title"]
             pr_branch = pr["headRefName"]
-            
+
             print(f"Processing PR #{pr_num}: '{pr_title}' on branch '{pr_branch}'")
-            
+
             try:
                 # Checkout PR branch
                 run_cmd(f"gh pr checkout {pr_num}")
-                
+
                 # Run unit tests
                 print("Running test suite on PR branch...")
-                run_cmd("python3 -m unittest /root/Loop-Bazaar/test_library.py")
-                
+                run_cmd(f"python3 -m unittest {os.path.join(REPO_DIR, 'test_library.py')}")
+
                 # If tests pass, merge the PR
                 print(f"Tests passed! Merging PR #{pr_num}...")
                 run_cmd(f"gh pr merge {pr_num} --merge --delete-branch -y")
@@ -197,7 +200,7 @@ def process_github_issues(db_data):
         if not issue_list_out:
             print("No open issues found.")
             return 0
-        
+
         issues = json.loads(issue_list_out)
         print(f"Found {len(issues)} open Issues.")
 
@@ -211,7 +214,7 @@ def process_github_issues(db_data):
             if "feedback" in labels or issue_title.startswith("Feedback:"):
                 print(f"Processing Feedback Issue #{issue_num}...")
                 slug, rating, author, comment = parse_feedback_issue(issue_body)
-                
+
                 # Check fallback slug if parsing failed
                 if not slug and ":" in issue_title:
                     slug = issue_title.split(":")[-1].strip()
@@ -232,7 +235,7 @@ def process_github_issues(db_data):
                             loop["averageRating"] = round(total / len(loop["reviews"]), 1)
                             loop_found = True
                             break
-                    
+
                     if loop_found:
                         print(f"Appended rating {rating}* to loop '{slug}' successfully.")
                         run_cmd(f"gh issue close {issue_num} -c 'Automated Check: Rating & comment integrated successfully into database.'")
@@ -246,11 +249,11 @@ def process_github_issues(db_data):
             elif "submission" in labels or issue_title.startswith("Submission:"):
                 print(f"Processing Loop Submission Issue #{issue_num}...")
                 sub = parse_submission_issue(issue_body)
-                
+
                 if sub["title"] and sub["prompt"] and len(sub["steps"]) > 0:
                     slug = sub["title"].lower().replace(" ", "-")
                     slug = re.sub(r'[^a-z0-9\-]', '', slug)
-                    
+
                     # Generate number by finding max number
                     numbers = []
                     for l in db_data.get("loops", []):
@@ -302,7 +305,7 @@ def process_github_issues(db_data):
                     try:
                         import google.generativeai as genai
                         genai.configure(api_key=api_key)
-                        
+
                         # Fetch project files contents
                         files_to_read = ["README.md", "compile_markdown.py", "update_library.py", "test_library.py", "loops_data.json"]
                         project_context = ""
@@ -311,7 +314,7 @@ def process_github_issues(db_data):
                             if os.path.exists(filepath):
                                 with open(filepath, "r", encoding="utf-8") as pf:
                                     project_context += f"--- FILE: {filename} ---\n{pf.read()}\n\n"
-                        
+
                         model = genai.GenerativeModel('gemini-2.5-flash')
                         prompt = (
                             f"You are an expert web development agent. Your task is to resolve a GitHub issue.\n"
@@ -322,10 +325,10 @@ def process_github_issues(db_data):
                             f"revised code block for the file, prefixing the block with the tag 'REVISED_FILE: <filename>' "
                             f"so it can be easily written to disk. If no files need modifications, output 'NO_CHANGES_NEEDED'."
                         )
-                        
+
                         response = model.generate_content(prompt)
                         resp_text = response.text.strip()
-                        
+
                         if "REVISED_FILE:" in resp_text:
                             # Parse file to overwrite
                             lines = resp_text.split("\n")
@@ -338,21 +341,21 @@ def process_github_issues(db_data):
                                 # Strip markdown code block wrappers
                                 code_content = re.sub(r"^```[a-zA-Z0-9]*\n", "", code_content)
                                 code_content = re.sub(r"\n```$", "", code_content)
-                                
+
                                 target_path = os.path.join(REPO_DIR, target_file)
                                 print(f"Rewriting target file: {target_path}")
-                                
+
                                 # Backup original
                                 with open(target_path, "r", encoding="utf-8") as orig:
                                     orig_content = orig.read()
-                                
+
                                 # Write new content
                                 with open(target_path, "w", encoding="utf-8") as out_f:
                                     out_f.write(code_content)
-                                
+
                                 # Verify using tests
                                 try:
-                                    run_cmd("python3 -m unittest /root/Loop-Bazaar/test_library.py")
+                                    run_cmd(f"python3 -m unittest {os.path.join(REPO_DIR, 'test_library.py')}")
                                     print("Autocoded fix passes unit tests! Committing changes...")
                                     run_cmd(f"git add {target_file}")
                                     run_cmd(f"git commit -m 'Auto-implemented fix for Issue #{issue_num}'")
@@ -368,26 +371,25 @@ def process_github_issues(db_data):
                         print(f"LLM auto-implementation failed: {llm_err}")
                 else:
                     print(f"Issue #{issue_num} is a general issue, but no Gemini API key was found in the environment. Leaving open.")
-                    
+
     except Exception as e:
         print(f"Error processing GitHub Issues: {e}")
-    
+
     return issues_processed
 
 def main():
     print(f"Running Loop Library automation script at {datetime.now().isoformat()}")
-    
+
     # 1. Load database
     if not os.path.exists(DB_PATH):
         print(f"Database path {DB_PATH} not found.")
         return
 
-    with open(DB_PATH, "r", encoding="utf-8") as f:
-        db_data = json.load(f)
+    db_data = load_database(DB_PATH)
 
     # 2. Scrape external loops
     scraped_count = scrape_latest_loops(db_data)
-    
+
     # 3. Pull Requests Processing
     process_github_pull_requests()
 
@@ -397,8 +399,7 @@ def main():
     # 5. Save updated database if any modifications were made
     if scraped_count > 0 or issues_processed_count > 0:
         db_data["updated"] = datetime.today().strftime('%Y-%m-%d')
-        with open(DB_PATH, "w", encoding="utf-8") as f:
-            json.dump(db_data, f, indent=2)
+        save_database(db_data, DB_PATH)
         print("Updated database saved successfully.")
 
         # Re-compile markdown files
@@ -411,7 +412,7 @@ def main():
 
         # 6. Commit and Push back to GitHub
         try:
-            run_cmd("git add loops_data.json README.md engineering/ evaluation/ operations/ content/ design/")
+            run_cmd("git add loops_data.json loops_data/ loop_data.py README.md engineering/ evaluation/ operations/ content/ design/")
             run_cmd('git commit -m "Automated daily loop catalog & rankings update [skip ci]"')
             run_cmd("git push origin main")
             print("Successfully pushed updates to GitHub repository.")

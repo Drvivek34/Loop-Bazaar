@@ -5,8 +5,8 @@ set -e
 # Log date and run start
 echo "=== Starting Daily Loop Library Update: $(date) ==="
 
-# Go to the repository directory
-cd /root/Loop-Bazaar
+# Go to the repository directory (the directory containing this script)
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
 # Load environment variables to ensure SSH keys and API keys are loaded in cron
 if [ -f "$HOME/.profile" ]; then

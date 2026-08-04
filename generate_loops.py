@@ -2,9 +2,13 @@ import json
 import os
 import random
 from datetime import datetime, timedelta
+from pathlib import Path
 
-DB_PATH = "/root/Loop-Bazaar/loops_data.json"
-ORIGINAL_PATH = "/root/.gemini/antigravity-cli/brain/63b1e010-619f-4d0c-a04b-0cc19f8234d3/.system_generated/steps/16/content.md"
+from loop_data import save_database
+
+REPO_DIR = Path(__file__).resolve().parent
+DB_PATH = str(REPO_DIR / "loops_data.json")
+ORIGINAL_PATH = os.environ.get("ORIGINAL_LOOPS_PATH", "")
 
 # Seed data pools for generating 5000+ realistic loops
 authors = [
@@ -62,7 +66,7 @@ def load_original_loops():
     if not os.path.exists(ORIGINAL_PATH):
         print(f"Original scraped content not found at {ORIGINAL_PATH}.")
         return []
-    
+
     with open(ORIGINAL_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -71,7 +75,7 @@ def load_original_loops():
         return []
 
     data = json.loads(content[json_start:])
-    
+
     # Standardize rating structure for original loops
     loops = data.get("loops", [])
     for idx, loop in enumerate(loops):
@@ -84,7 +88,7 @@ def load_original_loops():
             }
         ]
         loop["averageRating"] = 4.8 if idx % 2 == 0 else 4.2
-    
+
     return loops
 
 def generate_loops():
@@ -96,7 +100,7 @@ def generate_loops():
     # Target is to exceed 5000 loops. Let's aim for 5050 loops total.
     target_count = 5050
     loops_to_generate = target_count - original_count
-    
+
     categories = [
         {"slug": "engineering", "label": "Engineering"},
         {"slug": "evaluation", "label": "Evaluation"},
@@ -106,12 +110,12 @@ def generate_loops():
     ]
 
     start_date = datetime(2026, 1, 1)
-    
+
     print(f"Generating {loops_to_generate} unique loops...")
-    
+
     # We will generate loops deterministically to avoid duplicate slugs
     generated_combinations = set()
-    
+
     count = 0
     while count < loops_to_generate:
         lang = random.choice(languages_frameworks)
@@ -121,27 +125,27 @@ def generate_loops():
         stop = random.choice(stopping_conditions)
         why = random.choice(why_reasons)
         author = random.choice(authors)
-        
+
         combo = (lang, verb, target)
         if combo in generated_combinations:
             continue  # Avoid duplicate loop definitions
         generated_combinations.add(combo)
-        
+
         loop_num = str(original_count + count + 1).zfill(4)
         title = f"The {lang} {target.title()} {verb.capitalize()} Loop"
         slug = f"{lang.lower()}-{target.lower().replace(' ', '-')}-{verb.lower()}-{loop_num}"
         slug = "".join([c for c in slug if c.isalnum() or c in ['-', '_']])
-        
+
         description = f"A repeatable agent workflow that {verb} {target} in {lang} and stops when {stop}."
         use_when = f"Use this whenever you need to check or modify {target} in {lang} systems and need a strict exit criteria."
-        
+
         prompt = (
             f"Analyze the {lang} repository. Focus specifically on {target}. "
             f"Run the local inspection checks, locate any anomalies, drift, or inefficiencies. "
             f"Modify the relevant code paths, verify the modifications against the local checks, "
             f"and repeat the cycle until the stopping condition is fully met: {stop}."
         )
-        
+
         steps = [
             f"Scan the {lang} codebase for active {target}.",
             f"Identify any deviations from the target standard: {stop}.",
@@ -149,15 +153,15 @@ def generate_loops():
             f"Rerun the verification command to check the updated state.",
             f"Log output details and repeat until no deviations remain."
         ]
-        
+
         verification = {
             "title": f"{target.capitalize()} meets target standards.",
             "detail": f"Checked and confirmed that: {stop}."
         }
-        
+
         published_date = (start_date + timedelta(days=random.randint(0, 170))).strftime('%Y-%m-%d')
         rating = round(random.uniform(4.0, 5.0), 1)
-        
+
         # Prepopulate 1 review for generated loops to satisfy rating requirement
         reviews = [
             {
@@ -188,7 +192,7 @@ def generate_loops():
             "reviews": reviews,
             "averageRating": rating
         }
-        
+
         loops.append(new_loop)
         count += 1
 
@@ -204,8 +208,7 @@ def generate_loops():
         "loops": loops
     }
 
-    with open(DB_PATH, "w", encoding="utf-8") as f:
-        json.dump(database, f, indent=2)
+    save_database(database, DB_PATH)
 
     print(f"Generated loops database successfully! Total loops in database: {len(loops)}")
 

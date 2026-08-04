@@ -1,6 +1,6 @@
 # 🛠️ Operations Loops - Loop-Bazaar
 
-Welcome to the **Operations** category folder! This folder contains 960 loops.
+Welcome to the **Operations** category folder! This folder contains 961 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -968,3 +968,4 @@ Welcome to the **Operations** category folder! This folder contains 960 loops.
 | #5041 | [The PostgreSQL Unit Test Coverage Sweeps Loop](postgresql-unit-test-coverage-sweeps-5041.md) | @dennis_r | ★★★★☆ 4.1 | A repeatable agent workflow that sweeps unit test coverage in PostgreSQL and stops when all vulnerabilities are resolved. |
 | #5044 | [The Spring Boot Seo Keywords Optimizes Loop](springboot-seo-keywords-optimizes-5044.md) | @ada_lovelace | ★★★★☆ 4.5 | A repeatable agent workflow that optimizes SEO keywords in Spring Boot and stops when all checks pass successfully. |
 | #5064 | [Fresh-context loop engineering](fresh-context-loop-engineering.md) | Data Science Dojo | ★★★★☆ 4.5 | Structure long-running agent loops to reset/compact context each cycle so quality doesn't decay over a long run. |
+| #5066 | [The cross-repo catalog sync loop](cross-repo-catalog-sync-loop.md) | Drvivek34 | ★★★★★ 5.0 | A bounded maintenance workflow that keeps catalog repositories, generated READMEs, counts, links, and the Mega AI Bazaar landing metadata aligned. |
