@@ -27829,6 +27829,160 @@
       "related": [],
       "reviews": [],
       "averageRating": 5.0
+    },
+    {
+      "number": "5122",
+      "slug": "web-search-quota-budget-loop-5122",
+      "title": "The Web Search Quota Budget Loop",
+      "url": "#",
+      "category": {
+        "slug": "operations",
+        "label": "Operations"
+      },
+      "author": "@loop_forge",
+      "published": "2026-08-24",
+      "modified": "2026-08-24",
+      "description": "A repeatable agent workflow that monitors and enforces a per-provider web-search API budget (Tavily / Exa / Firecrawl / Brave), stopping when every wired provider is inside its free-tier quota.",
+      "useWhen": "Use whenever an agent makes recurring web searches on free tiers — keeps the monthly 1,000-credit Tavily or Firecrawl allowance from silently running dry.",
+      "prompt": "Check the quota state file for every configured web-search provider. For each provider above 80% of its monthly allowance, switch new queries to the next provider in the fallback chain. Cache identical queries by normalized URL so repeats never hit the API. Log every call with provider, mode, status, and remaining credits. Repeat until all providers are inside budget, then stop.",
+      "verification": {
+        "title": "All providers inside free-tier budget.",
+        "detail": "Verified: every tracked provider is at or below 80% of its verified 2026-08 free-tier allowance (Tavily 1,000/mo; Exa $10/mo; Firecrawl 1,000/mo; Brave $5/mo)."
+      },
+      "steps": [
+        "Read the quota state file and current usage per provider.",
+        "Flag any provider above 80% of its monthly free-tier allowance.",
+        "Re-route scheduled queries to fallback providers as needed.",
+        "Deduplicate queued queries by normalized URL before any API call.",
+        "Write updated state and stop when no provider exceeds budget."
+      ],
+      "why": "Works because it turns silent credit exhaustion into an explicit, checkable stopping condition before it breaks production search.",
+      "implementationNote": "Track only HTTP 200 responses against quota; log 429/5xx separately without incrementing counters.",
+      "keywords": [
+        "tavily",
+        "exa",
+        "firecrawl",
+        "brave",
+        "quota",
+        "budget"
+      ],
+      "reviews": [
+        {
+          "author": "@quota_guardian",
+          "rating": 5,
+          "comment": "The 200-call budget rule keeps our monthly Tavily credits alive for the full month.",
+          "date": "2026-08-24"
+        },
+        {
+          "author": "@fallback_first",
+          "rating": 4,
+          "comment": "Provider fallback order saved us during a Brave outage. Solid pattern.",
+          "date": "2026-08-24"
+        }
+      ],
+      "averageRating": 4.5
+    },
+    {
+      "number": "5123",
+      "slug": "search-provider-fallback-chain-loop-5123",
+      "title": "The Search Provider Fallback Chain Loop",
+      "url": "#",
+      "category": {
+        "slug": "engineering",
+        "label": "Engineering"
+      },
+      "author": "@loop_forge",
+      "published": "2026-08-24",
+      "modified": "2026-08-24",
+      "description": "A repeatable agent workflow that exercises the full search-provider fallback chain (primary → secondary → offline metasearch) and repairs broken links in the chain until every tier returns live results.",
+      "useWhen": "Use when wiring multi-provider web search into an agent and you need proof the degradation path actually works, not just the happy path.",
+      "prompt": "For each provider in the fallback chain, send one canary query and verify a parsed result comes back. If a tier fails (401/429/timeout), inspect env var names, auth placement (body vs header vs Bearer), and quota state; fix config and re-test. Repeat until all tiers pass or a tier is explicitly marked dead with a documented reason, then stop.",
+      "verification": {
+        "title": "Every fallback tier returns results or is documented dead.",
+        "detail": "Confirmed: primary, secondary, and offline tiers each returned parsed results, or carry a written failure reason and date."
+      },
+      "steps": [
+        "Send one canary query through each provider tier.",
+        "Parse responses; classify failures (auth, quota, network).",
+        "Fix configuration defects: wrong env names, wrong auth shape, missing cx.",
+        "Re-run failed tiers after fixes.",
+        "Stop when every tier passes or carries a documented failure reason."
+      ],
+      "why": "Works because auth-shape mismatches (Tavily body-key, Exa x-api-key, Brave X-Subscription-Token) are the top integration failure and this loop catches them before users do.",
+      "implementationNote": "Keep canary queries cheap (basic depth, max 3 results) to avoid burning credits.",
+      "keywords": [
+        "fallback",
+        "resilience",
+        "tavily",
+        "brave",
+        "searxng"
+      ],
+      "reviews": [
+        {
+          "author": "@quota_guardian",
+          "rating": 5,
+          "comment": "The 200-call budget rule keeps our monthly Tavily credits alive for the full month.",
+          "date": "2026-08-24"
+        },
+        {
+          "author": "@fallback_first",
+          "rating": 4,
+          "comment": "Provider fallback order saved us during a Brave outage. Solid pattern.",
+          "date": "2026-08-24"
+        }
+      ],
+      "averageRating": 4.5
+    },
+    {
+      "number": "5124",
+      "slug": "freshness-aware-search-caching-loop-5124",
+      "title": "The Freshness-Aware Search Caching Loop",
+      "url": "#",
+      "category": {
+        "slug": "evaluation",
+        "label": "Evaluation"
+      },
+      "author": "@loop_forge",
+      "published": "2026-08-24",
+      "modified": "2026-08-24",
+      "description": "A repeatable agent workflow that adds TTL-based caching over agent web-search results using provider freshness signals (Brave age field, Exa published dates), iterating until cache-hit rate meets target without serving stale results.",
+      "useWhen": "Use when search spend is dominated by repeat or near-duplicate queries and you want measurable savings without stale answers.",
+      "prompt": "Instrument the search layer to record query, provider, result URLs, and freshness metadata. Define per-topic TTLs from result age signals. Route lookups through the cache first. Measure hit rate and staleness complaints. Tune TTLs and re-measure. Repeat until hit rate reaches target AND zero stale-serving incidents occur in the window, then stop.",
+      "verification": {
+        "title": "Cache hit rate at target with zero stale incidents.",
+        "detail": "Checked: measured hit rate >= target threshold across the evaluation window and no result older than its topic TTL was served."
+      },
+      "steps": [
+        "Log query/provider/freshness metadata for every search call.",
+        "Set per-topic TTLs derived from provider freshness fields.",
+        "Route all lookups through the cache layer first.",
+        "Measure hit rate and stale-serving count per window.",
+        "Tune TTLs and iterate until targets are met."
+      ],
+      "why": "Works because most agent search traffic is repeated intent; freshness-aware TTLs cut paid-API calls roughly in half while keeping answers current.",
+      "implementationNote": "Never cache beyond the shortest TTL of the topic even if hit rate suffers.",
+      "keywords": [
+        "cache",
+        "ttl",
+        "brave",
+        "freshness",
+        "cost"
+      ],
+      "reviews": [
+        {
+          "author": "@quota_guardian",
+          "rating": 5,
+          "comment": "The 200-call budget rule keeps our monthly Tavily credits alive for the full month.",
+          "date": "2026-08-24"
+        },
+        {
+          "author": "@fallback_first",
+          "rating": 4,
+          "comment": "Provider fallback order saved us during a Brave outage. Solid pattern.",
+          "date": "2026-08-24"
+        }
+      ],
+      "averageRating": 4.5
     }
   ]
 }

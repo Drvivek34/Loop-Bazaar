@@ -1,6 +1,6 @@
 # 🛠️ Engineering Loops - Loop-Bazaar
 
-Welcome to the **Engineering** category folder! This folder contains 1077 loops.
+Welcome to the **Engineering** category folder! This folder contains 1078 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -1085,3 +1085,4 @@ Welcome to the **Engineering** category folder! This folder contains 1077 loops.
 | #5058 | [PRD-completion autonomous loop](prd-completion-loop.md) | snarktank (Ralph) | ★★★★☆ 4.6 | Run an agent loop that works through a PRD checklist, repeating until every item is complete. |
 | #5059 | [Autonomous loop with intelligent exit detection](intelligent-exit-loop.md) | Frank Bria (@frankbria) | ★★★★☆ 4.5 | A Ralph-style Claude Code loop with safeguards that detect completion/stagnation to avoid infinite runs and API waste. |
 | #5060 | [The Plan-and-Execute loop](plan-and-execute-loop.md) | LangChain | ★★★★☆ 4.6 | Plan the whole strategy up front, then execute steps sequentially, re-planning only when needed. |
+| #5123 | [The Search Provider Fallback Chain Loop](search-provider-fallback-chain-loop-5123.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that exercises the full search-provider fallback chain (primary → secondary → offline metasearch) and repairs broken links in the chain until every tier returns live results. |

@@ -1,6 +1,6 @@
 # 🛠️ Operations Loops - Loop-Bazaar
 
-Welcome to the **Operations** category folder! This folder contains 961 loops.
+Welcome to the **Operations** category folder! This folder contains 962 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -969,3 +969,4 @@ Welcome to the **Operations** category folder! This folder contains 961 loops.
 | #5044 | [The Spring Boot Seo Keywords Optimizes Loop](springboot-seo-keywords-optimizes-5044.md) | @ada_lovelace | ★★★★☆ 4.5 | A repeatable agent workflow that optimizes SEO keywords in Spring Boot and stops when all checks pass successfully. |
 | #5064 | [Fresh-context loop engineering](fresh-context-loop-engineering.md) | Data Science Dojo | ★★★★☆ 4.5 | Structure long-running agent loops to reset/compact context each cycle so quality doesn't decay over a long run. |
 | #5066 | [The cross-repo catalog sync loop](cross-repo-catalog-sync-loop.md) | Drvivek34 | ★★★★★ 5.0 | A bounded maintenance workflow that keeps catalog repositories, generated READMEs, counts, links, and the Mega AI Bazaar landing metadata aligned. |
+| #5122 | [The Web Search Quota Budget Loop](web-search-quota-budget-loop-5122.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that monitors and enforces a per-provider web-search API budget (Tavily / Exa / Firecrawl / Brave), stopping when every wired provider is inside its free-tier quota. |

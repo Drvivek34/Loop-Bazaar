@@ -4,9 +4,9 @@
 
 [![Mega AI Bazaar](https://img.shields.io/badge/🌐_Mega_AI_Bazaar-browse_all-6C5CE7)](https://drvivek34.github.io/Mega-AI-Bazaar/)
 
-Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5121** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
+Welcome to **Loop-Bazaar**! A premium, comprehensive bazaar of **5124** repeatable AI agent workflows, design patterns, and instructions with specific verification checkpoints and community ratings. All loops are organized into category folders with individual details pages.
 
-*Last updated: 2026-08-04 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
+*Last updated: 2026-08-24 | Version: 1.0.0 | Daily updates at 6:00 AM IST*
 
 ## 🔌 Supported Platforms & Agentic Rigs
 The workflows and prompts in Loop-Bazaar are designed to be environment-agnostic and can be implemented in a wide range of platforms:
@@ -2424,6 +2424,9 @@ Click on the titles to view complete details (Prompts, Steps, and Why it works) 
 | #5060 | Engineering | [The Plan-and-Execute loop](engineering/plan-and-execute-loop.md) | LangChain | ★★★★☆ 4.6 | Plan the whole strategy up front, then execute steps sequentially, re-planning only when needed. |
 | #5062 | Evaluation | [LLM-as-judge evaluation loop](evaluation/llm-as-judge-eval-loop.md) | Zheng et al. (MT-Bench) | ★★★★☆ 4.6 | Use a strong model as a judge to score outputs against a rubric, iterating prompts/models until scores plateau. |
 | #5063 | Evaluation | [Tree-of-Thoughts deliberate search loop](evaluation/tree-of-thoughts-loop.md) | Yao et al. (2023) | ★★★★☆ 4.6 | Explore multiple reasoning branches, evaluate them, and expand the most promising — a search loop over thoughts. |
+| #5122 | Operations | [The Web Search Quota Budget Loop](operations/web-search-quota-budget-loop-5122.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that monitors and enforces a per-provider web-search API budget (Tavily / Exa / Firecrawl / Brave), stopping when every wired provider is inside its free-tier quota. |
+| #5123 | Engineering | [The Search Provider Fallback Chain Loop](engineering/search-provider-fallback-chain-loop-5123.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that exercises the full search-provider fallback chain (primary → secondary → offline metasearch) and repairs broken links in the chain until every tier returns live results. |
+| #5124 | Evaluation | [The Freshness-Aware Search Caching Loop](evaluation/freshness-aware-search-caching-loop-5124.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that adds TTL-based caching over agent web-search results using provider freshness signals (Brave age field, Exa published dates), iterating until cache-hit rate meets target without serving stale results. |
 | #0033 | Content | [The Laravel Security Groups Triages Loop](content/laravel-security-groups-triages-0033.md) | @bjarnes | ★★★★☆ 4.5 | A repeatable agent workflow that triages security groups in Laravel and stops when stale state is fully cleared. |
 | #0059 | Evaluation | [The Express.js Localized Files Debugs Loop](evaluation/expressjs-localized-files-debugs-0059.md) | @marcus_a | ★★★★☆ 4.5 | A repeatable agent workflow that debugs localized files in Express.js and stops when performance benchmark is met. |
 | #0067 | Operations | [The React Api Rate Limits Optimizes Loop](operations/react-api-rate-limits-optimizes-0067.md) | @linus_t | ★★★★☆ 4.5 | A repeatable agent workflow that optimizes API rate limits in React and stops when all vulnerabilities are resolved. |

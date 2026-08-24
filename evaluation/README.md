@@ -1,6 +1,6 @@
 # 🛠️ Evaluation Loops - Loop-Bazaar
 
-Welcome to the **Evaluation** category folder! This folder contains 1067 loops.
+Welcome to the **Evaluation** category folder! This folder contains 1068 loops.
 
 [← Back to Global Directory Index](../README.md)
 
@@ -1075,3 +1075,4 @@ Welcome to the **Evaluation** category folder! This folder contains 1067 loops.
 | #5063 | [Tree-of-Thoughts deliberate search loop](tree-of-thoughts-loop.md) | Yao et al. (2023) | ★★★★☆ 4.6 | Explore multiple reasoning branches, evaluate them, and expand the most promising — a search loop over thoughts. |
 | #5065 | [The free API offer verification loop](free-api-offer-verification-loop.md) | Drvivek34 | ★★★★★ 5.0 | A repeatable catalog-maintenance workflow for checking current free-tier claims against first-party pricing and limits pages before publishing or renewing an API offer. |
 | #5067 | [The defensive agent-research refresh loop](defensive-agent-research-refresh-loop.md) | Drvivek34 | ★★★★★ 5.0 | A safety-bounded research workflow for refreshing an LLM red-team catalog with public, citable findings and matching mitigations. |
+| #5124 | [The Freshness-Aware Search Caching Loop](freshness-aware-search-caching-loop-5124.md) | @loop_forge | ★★★★☆ 4.5 | A repeatable agent workflow that adds TTL-based caching over agent web-search results using provider freshness signals (Brave age field, Exa published dates), iterating until cache-hit rate meets target without serving stale results. |
